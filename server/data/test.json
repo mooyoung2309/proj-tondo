@@ -1,0 +1,31 @@
+{
+    "QyeqeYxzboA": {
+      "bad_comment": {
+        "UCk8EKMxSXiwRLAh9WGjGNcw": {
+          "nickname": "\uc751\uae30\uc787",
+          "predict": 0.8,
+          "comment": "\ub09c \uba74\uc81c\uc9c0\ub9cc \uc194\uc9c1\ud788 \uad70\ub300\uac00\uace0 \uc2f6\uc74c"
+        },
+        "UCnvMU0_iRnSSZXx5esAXszA": {
+          "nickname": "\ubaa8\ubc94\ud0dd\uc2dc",
+          "predict": 0.8,
+          "comment": "<a href=\"https://www.youtube.com/watch?v=QyeqeYxzboA&amp;t=1m35s\">1:35</a> \u3131\u3142\u3139 \u3131\u3142\u3139 \u3131\u3142\u3139 \u314b!"
+        },
+        "UCwX6GKIAH9N0gQU9qKVXY1w": {
+          "nickname": "\uc7a5\ud76c\uc7ac",
+          "predict": 0.8,
+          "comment": "\ubc31\uace8\ubd80\ub300 \ud574\ubcd1\ub300 \ucd9c\uc2e0"
+        },
+        "UChoic0IN0msxakfcvAjKuKw": {
+          "nickname": "\ub0e5\ub0e5\ud380\uce58\ubbf8\uc57c\uc624",
+          "predict": 0.8,
+          "comment": "\uc751\uc560 \ub098\ub294 \uc544\uae30 \ub784\ub85c"
+        }
+      },
+      "info": {
+        "num_of_comments": 1134,
+        "num_of_bad_comments": 4,
+        "updated_time": "21/4/27 15:1:48"
+      }
+    }
+  }

@@ -4,13 +4,16 @@ import { Input } from 'antd';
 
 const { Search } = Input;
 
-const onSearch = value => console.log(value);
+const onSearch = () => {
+    this.props.history.push('/search')
+    console.log("dd")
+  };
 
-function LandingPage() {
+function LandingPage(props) {
     return (
         <>
             <div className="app" style={{ fontsize: '10px' }}>
-                <Search style={{ width: '30%' }} addonBefore="youtube.com/" placeholder="input youtube-link" onSearch={onSearch} enterButton />
+                <Search style={{ width: '30%' }} placeholder="input youtube-link" onSearch={() => {props.history.push('/search')}} enterButton />
             </div>
         </>
     )
