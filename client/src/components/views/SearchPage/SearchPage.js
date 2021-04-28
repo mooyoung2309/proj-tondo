@@ -23,7 +23,7 @@ function SearchPage(props) {
         setInfo(jsonTest[keyTest]["info"])
         
     }, [])
-    console.log(BadComments)
+
     var config = {
         width: 200,
         height: 200,
@@ -47,16 +47,19 @@ function SearchPage(props) {
         console.log(BadComments)
         return (
             <>
-            <div style={{ display: 'flex' }}>
+            <div style={{ display: 'flex', marginTop: '4rem'}}>
                 <div style={{ width: '50%' }}>
                     <Liquid {...config} />
                 </div>
                 <div style={{ width: '50%' }}>
-                    <Statistic title="Bad Comments / Per  Comments" value={Info.num_of_bad_comments + ' / ' + Info.num_of_comments} />
-                    <Statistic title="Updated Time" value={Info.updated_time} />
+                    <Statistic title="악성 댓글 / 전체 댓글" value={Info.num_of_bad_comments + ' / ' + Info.num_of_comments} />
+                    <Statistic style={{ marginTop: '1rem'}} title="업데이트된 시간" value={Info.updated_time} />
                 </div>
             </div>
-            <DragList BadComments={BadComments}></DragList>
+            <div style={{ marginTop: '6rem'}}>
+                <DragList BadComments={BadComments}></DragList>
+            </div>
+            
             </>
         )
     } else {

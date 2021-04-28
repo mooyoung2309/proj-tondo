@@ -2,33 +2,10 @@ import React, { useState, useEffect } from "react";
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 import uuid from "uuid/v4";
 
-// const itemsFromBackend = [
-//   { id: uuid(), content: "First task" },
-//   { id: uuid(), content: "Second task" },
-//   { id: uuid(), content: "Third task" },
-//   { id: uuid(), content: "Fourth task" },
-//   { id: uuid(), content: "Fifth task" }
-// ];
-
-// const columnsFromBackend = {
-//   [uuid()]: {
-//     name: "Bad",
-//     items: itemsFromBackend
-//   },
-//   [uuid()]: {
-//     name: "Good",
-//     items: []
-//   },
-//   [uuid()]: {
-//     name: "Vague",
-//     items: []
-//   }
-// };
-
 const onDragEnd = (result, columns, setColumns) => {
   if (!result.destination) return;
   const { source, destination } = result;
-
+  
   if (source.droppableId !== destination.droppableId) {
     const sourceColumn = columns[source.droppableId];
     const destColumn = columns[destination.droppableId];
@@ -60,6 +37,7 @@ const onDragEnd = (result, columns, setColumns) => {
       }
     });
   }
+  console.log(2)
 };
 
 function DragList(props) {
@@ -71,8 +49,7 @@ function DragList(props) {
     console.log(props)
     const itemsFromBackend = []
     for (var key in props.BadComments) {
-      console.log('dd')
-      itemsFromBackend.push({ id: uuid(), content: props.BadComments[key].comment })
+      itemsFromBackend.push({ id: key, content: props.BadComments[key].comment })
     }
   
     const columnsFromBackend = {
@@ -122,7 +99,7 @@ function DragList(props) {
                             : "lightgrey",
                           padding: 4,
                           width: 250,
-                          minHeight: 500
+                          minHeight: 500,
                         }}
                       >
                         {column.items.map((item, index) => {
@@ -150,7 +127,7 @@ function DragList(props) {
                                       ...provided.draggableProps.style
                                     }}
                                   >
-                                    {item.content}
+                                  {item.content}
                                   </div>
                                 );
                               }}
