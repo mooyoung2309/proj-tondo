@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Input } from 'antd';
-
+import { Container, Row, Col } from 'reactstrap';
 const { Search } = Input;
 
 const onSearch = (props,e) => {

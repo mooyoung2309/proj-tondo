@@ -1,6 +1,9 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Typography } from 'antd';
 import { Liquid } from '@ant-design/charts';
+import { Container, Row, Col } from 'reactstrap';
+
+var jsonTest = require('../../../data/test.json');
 
 const { Title } = Typography;
 const axios = require('axios');
@@ -11,8 +14,19 @@ function SearchPage(props) {
     const [YoutubeId, setYoutubeId] = useState("")
     const [BadComments, setBadComments] = useState({})
     const [Info, setInfo] = useState({})
+    
+    useEffect(() => {
+        var keyTest = Object.keys(jsonTest)[0]
+        setYoutubeId(keyTest)
+        setBadComments(jsonTest[keyTest]["bad_comment"])
+        setInfo(jsonTest[keyTest]["info"])
+        
 
+    }, [])
+    console.log(Info)
     var config = {
+        width: 200,
+        height: 200,
         percent: 0.25,
         outline: {
           border: 4,
@@ -27,11 +41,11 @@ function SearchPage(props) {
         } 
     
       };
-
+      // <Liquid {...config} />
     return (
-        <div>
-            <span>{YoutubeUrl+"의 분석결과 입니다."}</span>
-            <Liquid {...config} />
+        <div style={{ display: 'flex' }}>
+            <div><Liquid {...config} /></div>
+            <div><Liquid {...config} /></div>
         </div>
     )
 }
