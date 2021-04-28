@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import { Typography } from 'antd';
+import { Typography, Statistic } from 'antd';
 import { Liquid } from '@ant-design/charts';
 import { Container, Row, Col } from 'reactstrap';
+import DragList from './Sections/DragList';
 
 var jsonTest = require('../../../data/test.json');
 
@@ -21,13 +22,12 @@ function SearchPage(props) {
         setBadComments(jsonTest[keyTest]["bad_comment"])
         setInfo(jsonTest[keyTest]["info"])
         
-
     }, [])
-    console.log(Info)
+    console.log(BadComments)
     var config = {
         width: 200,
         height: 200,
-        percent: 0.25,
+        percent: Info.num_of_bad_comments / Info.num_of_comments,
         outline: {
           border: 4,
           distance: 8,
@@ -42,12 +42,27 @@ function SearchPage(props) {
     
       };
       // <Liquid {...config} />
-    return (
-        <div style={{ display: 'flex' }}>
-            <div><Liquid {...config} /></div>
-            <div><Liquid {...config} /></div>
-        </div>
-    )
+   
+    if(Object.keys(BadComments).length != 0) {
+        console.log(BadComments)
+        return (
+            <>
+            <div style={{ display: 'flex' }}>
+                <div style={{ width: '50%' }}>
+                    <Liquid {...config} />
+                </div>
+                <div style={{ width: '50%' }}>
+                    <Statistic title="Bad Comments / Per  Comments" value={Info.num_of_bad_comments + ' / ' + Info.num_of_comments} />
+                    <Statistic title="Updated Time" value={Info.updated_time} />
+                </div>
+            </div>
+            <DragList BadComments={BadComments}></DragList>
+            </>
+        )
+    } else {
+        return <div>...loading</div>
+    }
+    
 }
 
 export default SearchPage
