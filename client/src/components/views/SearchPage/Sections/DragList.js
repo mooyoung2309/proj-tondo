@@ -53,6 +53,7 @@ function DragList(props) {
 
   const [columns, setColumns] = useState({});
   const [BadComments, setBadComments] = useState({})
+  const [channels, setChannels] = useState({})
 
   //처음 렌더링 될 때 사용.
   useEffect(() => {
@@ -76,11 +77,30 @@ function DragList(props) {
       }
     };
     setColumns(columnsFromBackend)
+
+    setChannels({
+      "Bad": [],
+      "Good": [],
+      "Vague": []
+    })
+
 }, [])
 
 //렌더링이 업데이트 될 때 사용.
 useEffect(() => {
   console.log(columns)
+  for (var key in columns) {
+    console.log(columns[key].name)
+    var name = columns[key].name
+    var channelsTmp = channels
+    channelsTmp[name] = []
+    for (var channel in columns[key].items) {
+      channelsTmp[name].push(channel.id)
+    }
+    setChannels(channelsTmp)
+  }
+  console.log(channels)
+
 }, )
   
   
@@ -92,8 +112,8 @@ useEffect(() => {
                   marginBottom: "6rem",
                   width: 750,
                 }}tabBarExtraContent={operations}>
-        <TabPane tab="Tab 1" key="1">
-          Content of tab 1
+        <TabPane tab="Tab 1" key="Bad">
+          {channels["Bad"]}
         </TabPane>
         <TabPane tab="Tab 2" key="2">
           Content of tab 2
