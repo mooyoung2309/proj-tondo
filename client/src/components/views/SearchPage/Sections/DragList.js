@@ -49,8 +49,6 @@ const onDragEnd = (result, columns, setColumns, channels, setChannels) => {
 
 };
 
-
-
 function DragList(props) {
 
   const [columns, setColumns] = useState({});
@@ -60,20 +58,23 @@ function DragList(props) {
     "Good": [],
     "Vague": []
   })
-  console.log(channels)
+  //console.log(channels)
 
   const updateTabContents = () => {
+    console.log("updateTabContents실행")
+    var channelsTmp = channels
     for (var key in columns) {
+      console.log(columns)
+      console.log(key)
       var name = columns[key].name
-      var channelsTmp = channels
+      console.log(name)
       channelsTmp[name] = []
+      console.log(channelsTmp)
       for (var channelKey in columns[key].items) {
         channelsTmp[name].push("https://www.youtube.com/channel/"+ columns[key].items[channelKey].id+"\n")
       }
-      console.log(channelsTmp)
-      setChannels(channelsTmp)
-      console.log(channels)
     }
+    setChannels({...channelsTmp})
   }
 
   //처음 렌더링 될 때 사용.
@@ -97,18 +98,18 @@ function DragList(props) {
         items: []
       }
     };
+
     setColumns(columnsFromBackend);
 
-    
 }, [])
 
 useEffect(() => {
   updateTabContents();
-  console.log(columns)
+  //console.log(columns)
 }, [columns]);
 
 useEffect(() => {
-  console.log(channels)
+  //console.log(channels)
 }, [channels]);
   
   return (
