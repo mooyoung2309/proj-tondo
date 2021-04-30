@@ -3,15 +3,23 @@ import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 import uuid from "uuid/v4";
 import { Input } from 'antd';
 import { Button } from 'antd';
-import { Tabs, Divider, Checkbox } from 'antd';
+import { Tabs, Divider, Checkbox, message } from 'antd';
 
 const { TabPane } = Tabs;
-const CheckboxGroup = Checkbox.Group;
+const operations = (tabName) => {
+  return <Button onClick={() => success(tabName)}>채널 복사하기</Button>;
+} 
+const success = (tabName) => {
+  message.success(tabName + "의 채널 주소가 복사되었습니다.");
+};
+const columnsName = [
+  "Bad",
+  "Good",
+  "Vague",
+];
 
-const operations = <Button>Extra Action</Button>;
-const { Search } = Input;
-
-const onDragEnd = (result, columns, setColumns, channels, setChannels) => {
+//드래그가 끝났을 때 호출되는 함수
+const onDragEnd = (result, columns, setColumns) => {
   if (!result.destination) return;
   const { source, destination } = result;
   
@@ -58,10 +66,10 @@ function DragList(props) {
     "Good": [],
     "Vague": []
   })
-  //console.log(channels)
+  const [nowTabKey, setnowTabKey] = useState("");
 
+  //Tab의 콘텐츠 업데이트 함수
   const updateTabContents = () => {
-    console.log("updateTabContents실행")
     var channelsTmp = channels
     for (var key in columns) {
       console.log(columns)
@@ -77,6 +85,15 @@ function DragList(props) {
     setChannels({...channelsTmp})
   }
 
+  const success = () => {
+    if (channels[nowTabKey].length == 0) {
+      message.error(nowTabKey + "탭의 채널 주소가 없습니다.");
+    } else {
+      console.log(channels[nowTabKey])
+      message.success(nowTabKey + "탭의 채널 주소가 클립보드에 복사되었습니다.");
+      navigator.clipboard.writeText(channels[nowTabKey])
+    }
+  }
   //처음 렌더링 될 때 사용.
   useEffect(() => {
     const itemsFromBackend = []
@@ -86,15 +103,15 @@ function DragList(props) {
   
     const columnsFromBackend = {
       [uuid()]: {
-        name: "Bad",
+        name: columnsName[0],
         items: itemsFromBackend
       },
       [uuid()]: {
-        name: "Good",
+        name: columnsName[1],
         items: []
       },
       [uuid()]: {
-        name: "Vague",
+        name: columnsName[2],
         items: []
       }
     };
@@ -103,38 +120,22 @@ function DragList(props) {
 
 }, [])
 
-useEffect(() => {
-  updateTabContents();
-  //console.log(columns)
-}, [columns]);
+  useEffect(() => {
+    updateTabContents();
+  }, [columns]);
 
-useEffect(() => {
-  //console.log(channels)
-}, [channels]);
-  
   return (
     <div style={{ display: "flex",alignItems: "center", flexDirection: "column"}}>
-      <Tabs style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  marginBottom: "6rem",
-                  width: 750,
-                }}tabBarExtraContent={operations}>
-        <TabPane tab="Tab 1" key="Bad">
-          {channels["Bad"]}
-        </TabPane>
-        <TabPane tab="Tab 2" key="2">
-        {channels["Good"]}
-        </TabPane>
-        <TabPane tab="Tab 3" key="3">
-        {channels["Vague"]}
-        </TabPane>
+      <Tabs style={{ marginBottom: "6rem",width: 750,}} 
+            tabBarExtraContent={<Button onClick={() => success()}>복사하기</Button>}
+            onChange={(k) => setnowTabKey(k)}>
+        <TabPane tab={columnsName[0]} key={columnsName[0]}> {channels[columnsName[0]]} </TabPane>
+        <TabPane tab={columnsName[1]} key={columnsName[1]}> {channels[columnsName[1]]} </TabPane>
+        <TabPane tab={columnsName[2]} key={columnsName[2]}> {channels[columnsName[2]]} </TabPane>
       </Tabs>
       
       <div style={{ display: "flex", justifyContent: "center", height: "100%" ,flexDirection: "row"}}>
-        <DragDropContext
-          onDragEnd={result => onDragEnd(result, columns, setColumns, channels, setChannels)}
-        >
+        <DragDropContext onDragEnd={result => onDragEnd(result, columns, setColumns)}>
           {Object.entries(columns).map(([columnId, column], index) => {
             return (
               <div
