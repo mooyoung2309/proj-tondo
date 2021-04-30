@@ -11,7 +11,7 @@ const CheckboxGroup = Checkbox.Group;
 const operations = <Button>Extra Action</Button>;
 const { Search } = Input;
 
-const onDragEnd = (result, columns, setColumns) => {
+const onDragEnd = (result, columns, setColumns, channels, setChannels) => {
   if (!result.destination) return;
   const { source, destination } = result;
   
@@ -46,14 +46,35 @@ const onDragEnd = (result, columns, setColumns) => {
       }
     });
   }
-  console.log(2)
+
 };
+
+
 
 function DragList(props) {
 
   const [columns, setColumns] = useState({});
   const [BadComments, setBadComments] = useState({})
-  const [channels, setChannels] = useState({})
+  const [channels, setChannels] = useState({
+    "Bad": [],
+    "Good": [],
+    "Vague": []
+  })
+  console.log(channels)
+
+  const updateTabContents = () => {
+    for (var key in columns) {
+      var name = columns[key].name
+      var channelsTmp = channels
+      channelsTmp[name] = []
+      for (var channelKey in columns[key].items) {
+        channelsTmp[name].push("https://www.youtube.com/channel/"+ columns[key].items[channelKey].id+"\n")
+      }
+      console.log(channelsTmp)
+      setChannels(channelsTmp)
+      console.log(channels)
+    }
+  }
 
   //처음 렌더링 될 때 사용.
   useEffect(() => {
@@ -76,33 +97,19 @@ function DragList(props) {
         items: []
       }
     };
-    setColumns(columnsFromBackend)
+    setColumns(columnsFromBackend);
 
-    setChannels({
-      "Bad": [],
-      "Good": [],
-      "Vague": []
-    })
-
+    
 }, [])
 
-//렌더링이 업데이트 될 때 사용.
 useEffect(() => {
+  updateTabContents();
   console.log(columns)
-  for (var key in columns) {
-    console.log(columns[key].name)
-    var name = columns[key].name
-    var channelsTmp = channels
-    channelsTmp[name] = []
-    for (var channel in columns[key].items) {
-      channelsTmp[name].push(channel.id)
-    }
-    setChannels(channelsTmp)
-  }
-  console.log(channels)
+}, [columns]);
 
-}, )
-  
+useEffect(() => {
+  console.log(channels)
+}, [channels]);
   
   return (
     <div style={{ display: "flex",alignItems: "center", flexDirection: "column"}}>
@@ -116,16 +123,16 @@ useEffect(() => {
           {channels["Bad"]}
         </TabPane>
         <TabPane tab="Tab 2" key="2">
-          Content of tab 2
+        {channels["Good"]}
         </TabPane>
         <TabPane tab="Tab 3" key="3">
-          Content of tab 3
+        {channels["Vague"]}
         </TabPane>
       </Tabs>
       
       <div style={{ display: "flex", justifyContent: "center", height: "100%" ,flexDirection: "row"}}>
         <DragDropContext
-          onDragEnd={result => onDragEnd(result, columns, setColumns)}
+          onDragEnd={result => onDragEnd(result, columns, setColumns, channels, setChannels)}
         >
           {Object.entries(columns).map(([columnId, column], index) => {
             return (
@@ -137,7 +144,6 @@ useEffect(() => {
                 }}
                 key={columnId}
               >
-                
                 <Button style={{width: 250, height: 30}} type="primary">{column.name}</Button>
                 <div style={{ margin: 8 }}>
                   <Droppable droppableId={columnId} key={columnId}>

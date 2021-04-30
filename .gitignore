@@ -2,3 +2,4 @@ node_modules
 venv
 .idea
 test/model.h5
+workspace.code-workspace
