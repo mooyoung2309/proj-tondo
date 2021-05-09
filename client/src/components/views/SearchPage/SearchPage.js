@@ -17,6 +17,27 @@ function SearchPage(props) {
     const [Info, setInfo] = useState({})
     
     useEffect(() => {
+        axios.post('/api/comments/getComments', YoutubeUrl)
+        .then(response => {
+            if(response.data.success) {
+                console.log(response.data.comment)
+            } else {
+                console.log(response)
+            }
+        })
+        
+        // axios.post('/api/comments/testPush', "testjson")
+        // .then(response =>{
+        //     if(response) {
+        //         console.log(response)
+        //     } else {
+        //         console.log(response)
+        //     }
+        // })
+        // .catch(e => {
+        //     console.log(e);
+        // })
+        
         var keyTest = Object.keys(jsonTest)[0]
         setYoutubeId(keyTest)
         setBadComments(jsonTest[keyTest]["bad_comment"])

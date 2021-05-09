@@ -1,46 +1,16 @@
 const mongoose = require('mongoose');
-const bcrypt = require('bcrypt');
-const saltRounds = 10;
-const jwt = require('jsonwebtoken');
-const moment = require("moment");
+
 
 const commentSchema = mongoose.Schema({
     channelId: {
-        type:String,
+        type: String,
         maxlength:50,
-        badComment: {
-            commentChannelId: {
-                type: String,
-                maxlength: 50,
-            },
-        }
     },
-    email: {
-        type:String,
-        trim:true,
-        unique: 1 
-    },
-    password: {
-        type: String,
-        minglength: 5
-    },
-    lastname: {
-        type:String,
-        maxlength: 50
-    },
-    role : {
-        type:Number,
-        default: 0 
-    },
-    image: String,
-    token : {
-        type: String,
-    },
-    tokenExp :{
-        type: Number
-    }
+    badComments: [
+        
+    ]
 })
 
-const Comment = mongoose.model('User', commentSchema);
+const Comment = mongoose.model('Comment', commentSchema);
 
 module.exports = { Comment }
