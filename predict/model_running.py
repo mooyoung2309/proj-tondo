@@ -63,8 +63,8 @@ def check_bad_comment(str):
     test_X_1 = tokenizer.texts_to_sequences(test_sentences)
     test_X_1 = pad_sequences(test_X_1, padding='post', maxlen=25)
     prediction = model.predict(test_X_1)
-    if prediction[-1][0] >= 0.9:
-        print(test_sentences[-1], prediction[-1][0])
+    print(test_sentences[-1], prediction[-1][0])
+    if prediction[-1][0] >= 0.8:
         return prediction[-1][0]
     else:
         return 0
