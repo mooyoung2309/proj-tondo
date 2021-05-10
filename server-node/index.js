@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
-
+const bodyParser = require('body-parser');
 const app = express();
 const config = require("./config/key");
 
@@ -14,6 +14,7 @@ const connect = mongoose.connect(config.mongoURI,
   .catch(err => console.log(err));
 
 app.use(cors())
+app.use(bodyParser.json());
 
 const port = 5000;
 

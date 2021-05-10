@@ -9,28 +9,26 @@ const { Title } = Typography;
 const axios = require('axios');
 
 function SearchPage(props) {
-    const YoutubeUrl = props.location.state.YoutubeUrl
+    const youtubeUrl = props.location.state.youtubeUrl
     
     const [YoutubeId, setYoutubeId] = useState("")
     const [BadComments, setBadComments] = useState({})
     const [Info, setInfo] = useState({})
     
     useEffect(() => {
-        // axios.post('/api/comments/getComments', YoutubeUrl)
-        // .then(response => {
-        //     if(response.data.success) {
-        //         console.log(response.data.comment)
-        //     } else {
-        //         console.log(response)
-        //     }
-        // })
-        console.log("시작")
-        axios.post('/api/comments/testPush', {
-            firstName: 'Fred',
-            lastName: 'Flintstone'
-          })
+        // url 체크
+        const urlData = {
+            url: youtubeUrl,
+        }
+
+        axios.post('/api/comments/analyzeComment', urlData)
             .then((response) => {
-                console.log(response);
+                if(response.data) {
+                    console.log("not data");
+                    axios.post('/api/comments/createComment', urlData)
+                } else {
+                    console.log("hav data");
+                }
             })
             .catch((err) => {
                 console.log(err);

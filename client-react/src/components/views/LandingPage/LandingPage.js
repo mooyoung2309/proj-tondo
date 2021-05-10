@@ -6,12 +6,12 @@ const { Search } = Input;
 const onSearch = (props,e) => {
     props.history.push({
         pathname: '/search',
-        state: {YoutubeUrl : e}
+        state: {youtubeUrl : e}
     });
 };
 
 function LandingPage(props) {
-    const [YoutubeUrl, setYoutubeUrl] = useState("")
+    const [youtubeUrl, setYoutubeUrl] = useState("")
     return (
         <>
             <div className="app" style={{ fontsize: '10px' }}>
