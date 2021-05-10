@@ -71,12 +71,12 @@ function DragList(props) {
   const updateTabContents = () => {
     var channelsTmp = channels
     for (var key in columns) {
-      console.log(columns)
-      console.log(key)
+      // console.log(columns)
+      // console.log(key)
       var name = columns[key].name
-      console.log(name)
+      // console.log(name)
       channelsTmp[name] = []
-      console.log(channelsTmp)
+      // console.log(channelsTmp)
       for (var channelKey in columns[key].items) {
         channelsTmp[name].push("https://www.youtube.com/channel/"+ columns[key].items[channelKey].id+"\n")
       }
@@ -88,7 +88,7 @@ function DragList(props) {
     if (channels[nowTabKey].length == 0) {
       message.error(nowTabKey + "탭의 채널 주소가 없습니다.");
     } else {
-      console.log(channels[nowTabKey])
+      // console.log(channels[nowTabKey])
       message.success(nowTabKey + "탭의 채널 주소가 클립보드에 복사되었습니다.");
       navigator.clipboard.writeText(channels[nowTabKey])
     }

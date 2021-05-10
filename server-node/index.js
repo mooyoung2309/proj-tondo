@@ -1,8 +1,17 @@
-const express = require("express");
-const app = express();
-const cors = require("cors")
+const express = require('express');
+const cors = require('cors');
+const mongoose = require('mongoose');
 
+const app = express();
 const config = require("./config/key");
+
+const connect = mongoose.connect(config.mongoURI,
+  {
+    useNewUrlParser: true, useUnifiedTopology: true,
+    useCreateIndex: true, useFindAndModify: false
+  })
+  .then(() => console.log('MongoDB Connected...'))
+  .catch(err => console.log(err));
 
 app.use(cors())
 

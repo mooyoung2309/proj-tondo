@@ -16,26 +16,26 @@ function SearchPage(props) {
     const [Info, setInfo] = useState({})
     
     useEffect(() => {
-        axios.post('/api/comments/getComments', YoutubeUrl)
-        .then(response => {
-            if(response.data.success) {
-                console.log(response.data.comment)
-            } else {
-                console.log(response)
-            }
-        })
-        
-        // axios.post('/api/comments/testPush', "testjson")
-        // .then(response =>{
-        //     if(response) {
-        //         console.log(response)
+        // axios.post('/api/comments/getComments', YoutubeUrl)
+        // .then(response => {
+        //     if(response.data.success) {
+        //         console.log(response.data.comment)
         //     } else {
         //         console.log(response)
         //     }
         // })
-        // .catch(e => {
-        //     console.log(e);
-        // })
+        console.log("시작")
+        axios.post('/api/comments/testPush', {
+            firstName: 'Fred',
+            lastName: 'Flintstone'
+          })
+            .then((response) => {
+                console.log(response);
+            })
+            .catch((err) => {
+                console.log(err);
+            });
+        
         
         var keyTest = Object.keys(jsonTest)[0]
         setYoutubeId(keyTest)
@@ -64,7 +64,7 @@ function SearchPage(props) {
       // <Liquid {...config} />
    
     if(Object.keys(BadComments).length != 0) {
-        console.log(BadComments)
+        //console.log(BadComments)
         return (
             <>
                 <div style={{ display: 'flex', marginTop: '4rem'}}>
