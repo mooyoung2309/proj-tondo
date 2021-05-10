@@ -6,12 +6,13 @@ import collections
 import model_running
 import sys
 
+
 def get_predict(video_id):
     api_key = 'AIzaSyDpKrC6z9dYW69Dz9xeAR8MNqhZLar8wbM'
 
     result = collections.defaultdict()
     result[video_id] = collections.defaultdict()
-    result[video_id]['bad_comment'] = collections.defaultdict()
+    tmp = collections.defaultdict()
 
     comments = list()
     api_obj = build('youtube', 'v3', developerKey=api_key)
@@ -25,11 +26,11 @@ def get_predict(video_id):
             predict = model_running.check_bad_comment(comment['textDisplay'])
             if predict > 0:
                 num_of_bad_comments += 1
-                if comment['authorChannelId']['value'] not in result[video_id]['bad_comment'].keys():
-                    result[video_id]['bad_comment'][comment['authorChannelId']['value']] = collections.defaultdict(list)
-                result[video_id]['bad_comment'][comment['authorChannelId']['value']]['nickname'].append(comment['authorDisplayName'])
-                result[video_id]['bad_comment'][comment['authorChannelId']['value']]['predict'].append(str(predict))
-                result[video_id]['bad_comment'][comment['authorChannelId']['value']]['comment'].append(comment['textDisplay'])
+                if comment['authorChannelId']['value'] not in tmp.keys():
+                    tmp[comment['authorChannelId']['value']] = collections.defaultdict(list)
+                tmp[comment['authorChannelId']['value']]['nickname'].append(comment['authorDisplayName'])
+                tmp[comment['authorChannelId']['value']]['predict'].append(str(predict))
+                tmp[comment['authorChannelId']['value']]['comment'].append(comment['textDisplay'])
 
             if item['snippet']['totalReplyCount'] > 0:
                 for reply_item in item['replies']['comments']:
@@ -39,13 +40,13 @@ def get_predict(video_id):
                     predict = model_running.check_bad_comment(reply['textDisplay'])
                     if predict > 0:
                         num_of_bad_comments += 1
-                        if reply['authorChannelId']['value'] not in result[video_id]['bad_comment'].keys():
-                            result[video_id]['bad_comment'][
+                        if reply['authorChannelId']['value'] not in tmp.keys():
+                            tmp[
                                 reply['authorChannelId']['value']] = collections.defaultdict(list)
-                        result[video_id]['bad_comment'][reply['authorChannelId']['value']]['nickname'].append(reply[
-                            'authorDisplayName'])
-                        result[video_id]['bad_comment'][reply['authorChannelId']['value']]['predict'].append(str(predict))
-                        result[video_id]['bad_comment'][reply['authorChannelId']['value']]['comment'].append(reply['textDisplay'])
+                        tmp[reply['authorChannelId']['value']]['nickname'].append(reply[
+                                                                                      'authorDisplayName'])
+                        tmp[reply['authorChannelId']['value']]['predict'].append(str(predict))
+                        tmp[reply['authorChannelId']['value']]['comment'].append(reply['textDisplay'])
                     if len(comments) >= 1000:
                         break
             if len(comments) >= 1000:
@@ -63,9 +64,11 @@ def get_predict(video_id):
     result[video_id]['info']['num_of_comments'] = len(comments)
     result[video_id]['info']['num_of_bad_comments'] = num_of_bad_comments
     result[video_id]['info']['updated_time'] = now
+    result[video_id]['bad_comments'] = [tmp]
 
     print(json.dumps(result, indent=2))
 
-if __name__ =='__main__':
+
+if __name__ == '__main__':
     get_predict('SZ88hfr0jUo')
-    #sys.argv[1].split('=')[1][:11]
+    # sys.argv[1].split('=')[1][:11]
