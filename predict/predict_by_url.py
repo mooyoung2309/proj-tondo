@@ -25,11 +25,11 @@ def get_predict(video_id):
             predict = model_running.check_bad_comment(comment['textDisplay'])
             if predict > 0:
                 num_of_bad_comments += 1
-                result[video_id]['bad_comment'][comment['authorChannelId']['value']] = collections.defaultdict()
-                result[video_id]['bad_comment'][comment['authorChannelId']['value']]['nickname'] = comment[
-                    'authorDisplayName']
-                result[video_id]['bad_comment'][comment['authorChannelId']['value']]['predict'] = str(predict)
-                result[video_id]['bad_comment'][comment['authorChannelId']['value']]['comment'] = comment['textDisplay']
+                if comment['authorChannelId']['value'] not in result[video_id]['bad_comment'].keys():
+                    result[video_id]['bad_comment'][comment['authorChannelId']['value']] = collections.defaultdict(list)
+                result[video_id]['bad_comment'][comment['authorChannelId']['value']]['nickname'].append(comment['authorDisplayName'])
+                result[video_id]['bad_comment'][comment['authorChannelId']['value']]['predict'].append(str(predict))
+                result[video_id]['bad_comment'][comment['authorChannelId']['value']]['comment'].append(comment['textDisplay'])
 
             if item['snippet']['totalReplyCount'] > 0:
                 for reply_item in item['replies']['comments']:
@@ -39,11 +39,13 @@ def get_predict(video_id):
                     predict = model_running.check_bad_comment(reply['textDisplay'])
                     if predict > 0:
                         num_of_bad_comments += 1
-                        result[video_id]['bad_comment'][reply['authorChannelId']['value']] = collections.defaultdict()
-                        result[video_id]['bad_comment'][reply['authorChannelId']['value']]['nickname'] = reply[
-                            'authorDisplayName']
-                        result[video_id]['bad_comment'][reply['authorChannelId']['value']]['predict'] = str(predict)
-                        result[video_id]['bad_comment'][reply['authorChannelId']['value']]['comment'] = reply['textDisplay']
+                        if reply['authorChannelId']['value'] not in result[video_id]['bad_comment'].keys():
+                            result[video_id]['bad_comment'][
+                                reply['authorChannelId']['value']] = collections.defaultdict(list)
+                        result[video_id]['bad_comment'][reply['authorChannelId']['value']]['nickname'].append(reply[
+                            'authorDisplayName'])
+                        result[video_id]['bad_comment'][reply['authorChannelId']['value']]['predict'].append(str(predict))
+                        result[video_id]['bad_comment'][reply['authorChannelId']['value']]['comment'].append(reply['textDisplay'])
                     if len(comments) >= 1000:
                         break
             if len(comments) >= 1000:
@@ -66,4 +68,4 @@ def get_predict(video_id):
 
 if __name__ =='__main__':
     get_predict('SZ88hfr0jUo')
-#sys.argv[1].split('=')[1][:11]
+    #sys.argv[1].split('=')[1][:11]
