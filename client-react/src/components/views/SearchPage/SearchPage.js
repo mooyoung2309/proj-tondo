@@ -10,7 +10,7 @@ const axios = require('axios');
 
 function SearchPage(props) {
     const YoutubeUrl = props.location.state.YoutubeUrl
-
+    
     const [YoutubeId, setYoutubeId] = useState("")
     const [BadComments, setBadComments] = useState({})
     const [Info, setInfo] = useState({})
@@ -79,7 +79,6 @@ function SearchPage(props) {
                 <div style={{ marginTop: '6rem'}}>
                     <DragList BadComments={BadComments}></DragList>
                 </div>
-            
             </>
         )
     } else {

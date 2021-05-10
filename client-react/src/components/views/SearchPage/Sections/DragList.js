@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
-import uuid from "uuid/v4";
 import { Input } from 'antd';
 import { Button } from 'antd';
 import { Tabs, Divider, Checkbox, message } from 'antd';
@@ -102,15 +101,15 @@ function DragList(props) {
     }
   
     const columnsFromBackend = {
-      [uuid()]: {
+      [columnsName[0]]: {
         name: columnsName[0],
         items: itemsFromBackend
       },
-      [uuid()]: {
+      [columnsName[1]]: {
         name: columnsName[1],
         items: []
       },
-      [uuid()]: {
+      [columnsName[2]]: {
         name: columnsName[2],
         items: []
       }
