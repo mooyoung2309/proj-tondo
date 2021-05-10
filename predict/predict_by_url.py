@@ -44,9 +44,9 @@ def get_predict(video_id):
                             'authorDisplayName']
                         result[video_id]['bad_comment'][reply['authorChannelId']['value']]['predict'] = str(predict)
                         result[video_id]['bad_comment'][reply['authorChannelId']['value']]['comment'] = reply['textDisplay']
-                    if len(comments) >= 100:
+                    if len(comments) >= 1000:
                         break
-            if len(comments) >= 100:
+            if len(comments) >= 1000:
                 break
         if 'nextPageToken' in response:
             response = api_obj.commentThreads().list(part='snippet,replies', videoId=video_id,
@@ -65,4 +65,5 @@ def get_predict(video_id):
     print(json.dumps(result, indent=2))
 
 if __name__ =='__main__':
-    get_predict(sys.argv[1].split('=')[1][:11])
+    get_predict('SZ88hfr0jUo')
+#sys.argv[1].split('=')[1][:11]
