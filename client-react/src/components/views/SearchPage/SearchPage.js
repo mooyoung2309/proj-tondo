@@ -26,6 +26,12 @@ function SearchPage(props) {
                 if(response.data) {
                     console.log("not data");
                     axios.post('/api/comments/createComment', urlData)
+                        .then((response) => {
+                            console.log(response)
+                        })
+                        .catch((err) => {
+                            console.log(err);
+                        });
                 } else {
                     console.log("hav data");
                 }
@@ -33,7 +39,6 @@ function SearchPage(props) {
             .catch((err) => {
                 console.log(err);
             });
-        
         
         var keyTest = Object.keys(jsonTest)[0]
         setYoutubeId(keyTest)

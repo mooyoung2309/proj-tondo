@@ -5,12 +5,7 @@ import { Button } from 'antd';
 import { Tabs, Divider, Checkbox, message } from 'antd';
 
 const { TabPane } = Tabs;
-const operations = (tabName) => {
-  return <Button onClick={() => success(tabName)}>채널 복사하기</Button>;
-} 
-const success = (tabName) => {
-  message.success(tabName + "의 채널 주소가 복사되었습니다.");
-};
+
 const columnsName = [
   "Bad",
   "Good",

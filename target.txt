@@ -1,0 +1,1230 @@
+﻿
+  1/313 [..............................] - ETA: 48:56 - loss: 0.1198 - accuracy: 0.9688
+ 19/313 [>.............................] - ETA: 0s - loss: 0.0767 - accuracy: 0.9655   
+ 39/313 [==>...........................] - ETA: 0s - loss: 0.0988 - accuracy: 0.9559
+ 56/313 [====>.........................] - ETA: 0s - loss: 0.0904 - accuracy: 0.9598
+ 75/313 [======>.......................] - ETA: 0s - loss: 0.0980 - accuracy: 0.9600
+ 95/313 [========>.....................] - ETA: 0s - loss: 0.0931 - accuracy: 0.9618
+115/313 [==========>...................] - ETA: 0s - loss: 0.0914 - accuracy: 0.9617
+134/313 [===========>..................] - ETA: 0s - loss: 0.0931 - accuracy: 0.9604
+150/313 [=============>................] - ETA: 0s - loss: 0.0948 - accuracy: 0.9598
+167/313 [===============>..............] - ETA: 0s - loss: 0.0958 - accuracy: 0.9605
+183/313 [================>.............] - ETA: 0s - loss: 0.0954 - accuracy: 0.9609
+201/313 [==================>...........] - ETA: 0s - loss: 0.0939 - accuracy: 0.9622
+219/313 [===================>..........] - ETA: 0s - loss: 0.0927 - accuracy: 0.9618
+237/313 [=====================>........] - ETA: 0s - loss: 0.0930 - accuracy: 0.9619
+256/313 [=======================>......] - ETA: 0s - loss: 0.1138 - accuracy: 0.9570
+276/313 [=========================>....] - ETA: 0s - loss: 0.1800 - accuracy: 0.9409
+295/313 [===========================>..] - ETA: 0s - loss: 0.2406 - accuracy: 0.9266
+310/313 [============================>.] - ETA: 0s - loss: 0.2854 - accuracy: 0.9154
+313/313 [==============================] - 10s 3ms/step - loss: 0.2914 - accuracy: 0.9140
+{
+  "r0mgs7YoeCc": {
+    "info": {
+      "num_of_comments": 473,
+      "num_of_bad_comments": 109,
+      "updated_time": "21/05/11-16:44:37"
+    },
+    "bad_comments": {
+      "UCuF3_rR_zOPy4_n02sBQGQg": {
+        "nickname": [
+          "\uae4c\uafcd"
+        ],
+        "predict": [
+          "0.99728775"
+        ],
+        "comment": [
+          "\u314b\u314b\u314b\u314b \uc774\uac70 \ubcf4\uba74\uc11c \ub290\ub080\uac8c \uc65c \uc758\ud68c\uc81c\ub3c4 \ub098\uc624\uae30 \uc804\uc5d0 \uc911\uc559\uc9d1\uad8c\uccb4\uc81c\uc600\ub294\uc9c0 \uc54c\uaca0\ub2e4<br />\uc11c\ub85c \uc9c0\uac00 \uc633\ub2e4\uace0 \ubc15\ubc15 \uc6b0\uae30\ub294 \ubb34\ub1cc\ub4e4, \uc9c0\ub124 \ud558\uace0\uc2f6\uc740 \ub370\ub85c\ub9cc \ud558\ub294 \uc560\ub4e4 \ub370\ub9ac\uace0 \uc5b4\ub5bb\uac8c \uac19\uc774 \ub098\uc544\uac10 \u314b\u314b\u314b<br />\uba38\ub2c8\uac8c\uc784 \uc6b0\uc2b9\uc790 \ubf51\uc73c\ub824\uba74 \uacf5\ud601\uc900\ucc98\ub7fc \ud55c\uba85\uc529 \uc81c\uac70\ud558\uba74\uc11c \ud558\ub358\uac00 \uc544\ub2c8\uba74 \ub300\ub193\uace0 \ud3ed\ub825 \ud5c8\uac00\ud574\uc11c \ud55c\uba85\uc774 \uc8fc\uba39\uc73c\ub85c \ub2e4 \ub54c\ub824\uc7a1\uc740 \ub2f4\uc5d0 \uc815\ub7c9\ubc30\uc2dd \ud558\uba74\ub428<br />\uacb0\uad6d \uc2dc\ubbfc\uc911\uc2ec\uc758 \uc790\uc720\uc8fc\uc758\uc758 \uc2dc\uc791\uc774\ub77c\ub294 \ud504\ub791\uc2a4 \ud601\uba85\ub3c4 \ub8e8\uc77414\uc138 \uac15\uc81c\ucc98\ud615\uc73c\ub85c \uc2dc\uc791\ub41c\uac70 \uac4d \ud3ed\ub825\uc774 \ub2f5\uc784 \u314b\u314b\u314b"
+        ]
+      },
+      "UC_2W4VUb0Ax68hzp6TQapkw": {
+        "nickname": [
+          "S Cans"
+        ],
+        "predict": [
+          "0.9125824"
+        ],
+        "comment": [
+          "\ub3fc\uc9c0 \ud601\uc900 \uc5ec\uce5c \ud654\uc7a5\ube68~"
+        ]
+      },
+      "UCojL60GWZivYOfikYOUMxTA": {
+        "nickname": [
+          "\ub098\uc57c\ub7ec\ube0c\uc560\ud50c"
+        ],
+        "predict": [
+          "0.9975178"
+        ],
+        "comment": [
+          "\ub54c\ub824\uccd0\ub77c~~ \ubb34\uc2a8 \uc778\ud130\ud3f0\uc744 \ub04a\uc5b4 \ubc84\ub9ac\ub294\uac8c \uc815\uc0c1\uc774\ub0d0? \uadf8\ub7fc, \uac74\ubb3c \ubd80\uc2dc\uace0 \ub098\uac00\uc11c \ubb3c\uac74 \uc0ac\uc624\uc9c0?<br /><br />\uba38\ub2c8\uac8c\uc784\uc778\ub370 \ubb34\uc2a8 \uc778\ud130\ud3f0 \uc120 \ub04a\uc5b4 \ubc84\ub9ac\ub294\uac8c \ubb34\uc2a8 \uc804\ub7b5\uc778\uac83\ucc98\ub7fc \ub098\uc624\ub124..."
+        ]
+      },
+      "UCSDbuMH4F3NB2PZoxk53rEw": {
+        "nickname": [
+          "mg k"
+        ],
+        "predict": [
+          "0.82321787"
+        ],
+        "comment": [
+          "7\ud654 \uc5b8\uc81c \uc62c\ub77c\uc624\uc8e0?"
+        ]
+      },
+      "UCRtL2PDgD-b3g-6pY-kUk9A": {
+        "nickname": [
+          "\u110b\u110b"
+        ],
+        "predict": [
+          "0.96906227"
+        ],
+        "comment": [
+          "\uc883\uac19\uc740\uac70\uc880 \uc2e4\uc2dc\uac04 \uc21c\uc704\uc5d0\uc11c \uc548\ubcf4\uc774\uac8c\ud574\ub77c;;"
+        ]
+      },
+      "UCcdKOntAsZ3BKfroZEVCwfw": {
+        "nickname": [
+          "\uc11c\ub3c4\ud604"
+        ],
+        "predict": [
+          "0.9958929"
+        ],
+        "comment": [
+          "\uc9d1\ub2e8 \ud1f4\uc18c\ud55c \uc5ec\uc790\ub4e4 \ub2e4\uc2dc \uc124\ub4dd\ud574\uc11c \uac00\uc838\ub2e4 \uc628 \uac70\ubd80\ud130 \ub8f0 \uae68\ubc84\ub9b0\uac74\ub370 \uac4d \ub8f0\uc744 \uae68\ubc84\ub9b4\uac70\uba74 &#39;4\uba85\uc774 \ub3d9\uc2dc \ud1f4\uc18c \uc2dc \uac8c\uc784 \uc885\ub8cc&#39;\ub97c \uc5c6\uc560\uc9c0.. \uadf8\ub7ec\uba74 \uc9d1\ub2e8 \ud1f4\uc18c \uc7a5\uba74 \ub098\uc62c \uc218 \uc788\uace0 \ub0a8\uc790 4\uba85\uc774\uc11c 2\ub3002 \ud300\uba39\uace0(1,4 vs 3,7) \uae30\uc2f8\uc6c0 \ud558\uba74\uc11c \uac1c\uafc0\uc7bc \uadf9\ub77d \uac00\ub294\uac74\ub370 \ud558.. \ubd84\uba85\ud788 \uc5ec\uc790\ub4e4 \ub2e4\uc2dc \uc124\ub4dd\ud560 \ub54c \uc9d1\ub2e8 \ud1f4\uc18c\ud558\ub294 \ubd80\ubd84 \ud3b8\uc9d1\ud574\uc900\ub2e4\uace0 \ud588\uaca0\uc9c0? \u314b\u314b"
+        ]
+      },
+      "UCmos07F1pvztnaS6WayYuRA": {
+        "nickname": [
+          "\uc815\uc6b0\uc131"
+        ],
+        "predict": [
+          "0.9958289"
+        ],
+        "comment": [
+          "\u3139\u3147 \uc5ec\uc790\ub4e4\uc774 \uc788\uc73c\ub2c8\uae50 \uadf8\ub0e5 \uce5c\ubaa9\uc9c8 \uac9c \uadf8\uc774\uc0c1 \uadf8\uc774\ud558\ub3c4 \uc544\ub2d8;;; \uadf8\ub0e5 \uc5ec\uc790\ucabd\uc5d0 \ube4c\ubd99\uc73c\uba74 \uc774\uae40 \u314b\u314b \uc774\uac8c\ubb50\ub0d0"
+        ]
+      },
+      "UCVk_DqIrNuSxFDZwJPC6Y1g": {
+        "nickname": [
+          "\uace0\ub9c1\uc218"
+        ],
+        "predict": [
+          "0.99773693"
+        ],
+        "comment": [
+          "\uc9c4\uc2ec \uc774\uac70 \ubc29\uc1a1 \ub9cc\ub4e0 \uc0ac\ub78c\ub3c4 \ub300\ub2e8\ud558\ub2e4....."
+        ]
+      },
+      "UCMO7n6qNzns2yt0Vvn0zVIA": {
+        "nickname": [
+          "\uc9c4\uc885\ud604"
+        ],
+        "predict": [
+          "0.99742883"
+        ],
+        "comment": [
+          "1-&gt;3,3-&gt;4,4-&gt;5,5-&gt;6,6-&gt;7,7-&gt;1<br />\uc774\ub7f0\uc2dd\uc73c\ub85c \ud22c\ud45c\ud558\uba74 \ub204\uac00 \ud22c\ud45c \uc774\uc0c1\ud558\uac8c \ud588\ub294\uc9c0 \uc54c \uc218 \uc788\uc9c0 \uc54a\uc74c? \ud45c \uc218 \uc548\uac00\ub974\uccd0\uc904\ub77c\ub098"
+        ]
+      },
+      "UCoY7GIWzGVEf-JZvyDPqYFg": {
+        "nickname": [
+          "\u062a\u0634\u062c\u064a\u0631 \u0627\u0644\u0628\u0637\u0627\u0637\u0633"
+        ],
+        "predict": [
+          "0.9963477"
+        ],
+        "comment": [
+          "\uc790~ \ud480\ubc84\uc804 \uacf5\uac1c \ub4dc\uac00\uc790~"
+        ]
+      },
+      "UCdCs4sU6Ufg8F5eqpPDH7ww": {
+        "nickname": [
+          "\ud14c\uc2ac\ub77c"
+        ],
+        "predict": [
+          "0.8232204"
+        ],
+        "comment": [
+          "\uadf8\uac83\uc744 \uc54c\ub824\ub4dc\ub9bc \ucde8\uc7ac\uc758\ub8b0\uc694<br />\ucd5c\uadfc \ub17c\ub780\uc774 \ub418\uace0\uc788\ub294 \uc9c4\uc6a9\uc9c4 \uba38\ub2c8\uac8c\uc784 \ub17c\ub780\uc5d0 \ub300\ud574\uc11c \uc0c5\uc0c5\uc774 \uc870\uc0ac\ud574\uc8fc\uc2dc\uace0 \uc54c\ub824\uc8fc\uc2dc\uba74 \uc88b\uc744\uac70\uac19\ub124\uc694.. \ub0a8\ub4e4 \uc0ac\uc0dd\ud65c\uc774\ub098 \ubc29\uc1a1\ud65c\ub3d9 \ucc0d\ub294\uac70 \uc54c\ub824\uc8fc\uc2dc\uba74\uc11c \ubcf8\uc778\uac74 \uc548 \uc54c\ub824\uc8fc\ub294\uac74 \uc544\ub2c8\uc8e0??"
+        ]
+      },
+      "UCagXfvzYuFRCrCe9VgXoTGw": {
+        "nickname": [
+          "\uc790\ucde8\uc0dd"
+        ],
+        "predict": [
+          "0.99553525"
+        ],
+        "comment": [
+          "\ub3c8(\uc7ac\uc0b0)\uc774 \uac78\ub9ac\uba74 \uac00\uc871\ub3c4 \uc808\uc5f0\ud558\ub294\uac70 \ub9ce\uc774 \ubd24\ub2e4."
+        ]
+      },
+      "UCJqHMhGagfeDVkLgK3bq7uw": {
+        "nickname": [
+          "\uac4d\uac4d"
+        ],
+        "predict": [
+          "0.98701376"
+        ],
+        "comment": [
+          "\uadfc\ub370 \ud53c\ud574\uc790 \uc5b4\uca4c\uace0\uc800\uca4c\uace0\u3160\ubc1c\uc5b8 \ube7c\uace0 \uc695\uba39\uc744\uac8c \ub531\ud788 \uc788\ub098 \uc2f6\uc74c \uc6d0\ub798 \uc800\ub7f0 \uc0c1\ud669 \ubcfc\ub824\uace0 \ub2e4\ub4e4 \uc774\uac70 \ubcf4\ub294\uac70 \uc544\ub2d8? \uc9c4\uc9dc \uc2e4\uc81c \uc0c1\ud669\uc774\uba74 \ub2e4 \uc800\ub7ec\uc9c0. \uc9c0\uae08 \ucc38\uac00\uc790\ub4e4\uc744 \uc695\ud558\ub294 \uc0ac\ub78c\ub4e4\uc740 \ucc98\uc74c\ubd80\ud130 \uc800 \uc0ac\ub78c\ub4e4\uc774 \uc9dc\uace0 \uc57c \uc6b0\ub9ac \uadf8\ub0e5 \ud55c\uba85\uc774 \ubc1b\uace0 \ub9c8\uc9c0\ub9c9\uc5d0 \ub0a8\uc740 \uc0ac\ub78c\uc774 10\ud37c \ub354 \uac00\uc9c0\uace0 \ub098\uba38\uc9c0\ub294 n\ube75 \ud574\uc918 \uc774\ub7ec\uae38 \uc6d0\ud55c\uac70\uac00"
+        ]
+      },
+      "UCxkogMsOBr0cT4MY87Sufkw": {
+        "nickname": [
+          "LW SONBA"
+        ],
+        "predict": [
+          "0.8009849"
+        ],
+        "comment": [
+          "<a href=\"https://www.youtube.com/watch?v=r0mgs7YoeCc&amp;t=13m46s\">13:46</a> \uc5ec\uc790 \uaf48\ub69c\ub985\uc778\uc904"
+        ]
+      },
+      "UCUamWTJ7QE0E6XxHCz0OWYg": {
+        "nickname": [
+          "\uc544\ubb34\ub9ac"
+        ],
+        "predict": [
+          "0.9830049"
+        ],
+        "comment": [
+          "\uba38\ub2c8\uac8c\uc784\uc5d0\uc11c \ubcc0\uae30\uac00 \uc81c\uc77c \uc798\ubabb\ud588\uc5b4. 2\ubc88\uce78 \ubcc0\uae30 \uc78a\uc9c0 \uc54a\uaca0\ub2e4.<br />\ubcc0\uae30\ucee4\ubc84\ub294 \uce6d\ucc2c\ud574"
+        ]
+      },
+      "UCv4o8u6rmaDDa79OtBGD8aQ": {
+        "nickname": [
+          "vermouth"
+        ],
+        "predict": [
+          "0.9973367"
+        ],
+        "comment": [
+          "\uc5ec\uc7904\uc778 \uc9c0\ub4e4 \ub534\uc5d4 \uadf8\ub0e5 \u3148\uac19\uace0 \uacac\ub514\uae30 \ud798\ub4dc\ub2c8\uae4c \ub098\uac04\ub2e4 \ud55c\uac70\uaca0\uc9c0\ub9cc \ub098\uac00\ub3c4 \ub0a8\uc740 \ucc38\uac00\uc790\ub4e4\ub07c\ub9ac \uc9c4\ud589\ud560 \uc218 \uc788\uac8c \ub9cc\ub4e4\uc5b4\uc57c \ud558\ub294 \uac70 \uc544\ub2d8? \uc560\ucd08\uc5d0 \ub2e8\uccb4 \ud1f4\uc18c\ud55c\ub2e4\uace0 \uac8c\uc784 \ud130\uc9c0\ub294 \uac8c \ub9d0\uc774 \uc548 \ub428"
+        ]
+      },
+      "UCuBTkwNcu_vMVwVKQ4quT-w": {
+        "nickname": [
+          "fhoiunoxe"
+        ],
+        "predict": [
+          "0.9975841"
+        ],
+        "comment": [
+          "\uc9d1\ub2e8 \ud1f4\uc18c \uc7a5\uba74 \uacf5\uac1c \uc880 \ud574\ub77c \ubb50\ud558\ub098 \uc7e4\ub0ec \uc774\ubbf8 \ub2e4 \uc695\ud558\uace0 \uc308\ubc15\uc9c8\ud558\ub294\uac70 \ub2e4 \ubc1d\ud600\uc84c\ub294\ub370"
+        ]
+      },
+      "UC4L0hy81JjZ_nLL17pPhyzw": {
+        "nickname": [
+          "S A L"
+        ],
+        "predict": [
+          "0.99766326"
+        ],
+        "comment": [
+          "\uadf8\ub0e5 \uc8fc\ub465\uc774 \ub2eb\uace0 \ubd10 \uac00\uc9dc\uc0ac\ub098\uc774\ucc98\ub7fc \uc911\uc9c0\ub098\uac8c \ud558\uc9c0\ub9d0\uace0 \uc774\ub798\ub193\uace0 \uc911\uc9c0\ub2f9\ud558\uba74 \u3148\u3139\ud55c \uc0c8\ub07c\ub4e4\uc774 \uc65c \u3148\u3139\ud574\uc11c \uc911\ub2e8\ub418\uac8c \ud558\ub0d0 \u3147\u3148\u3139\ub5a8\uac70 \uc544\ub0d0 \uc0dd\uac01\ub9cc \ud574\ub3c4 \uc5ed\uacb9\ub124"
+        ]
+      },
+      "UC4hkmB0yFtkaqKWP9N8coZA": {
+        "nickname": [
+          "Full gold"
+        ],
+        "predict": [
+          "0.97504586"
+        ],
+        "comment": [
+          "\uc218\uc5fc\uae30\ub978 \uac04\uc7bd\uc774\ub3c4 \uc788\uad6c\ub098"
+        ]
+      },
+      "UCb9gaGZXZk2ivV9G3A_h85A": {
+        "nickname": [
+          "\uad7f\uad7f"
+        ],
+        "predict": [
+          "0.82321787"
+        ],
+        "comment": [
+          "7\ud654 \uc5b8\uc81c \ub098\uc624\ub098\uc5ec???"
+        ]
+      },
+      "UC_oik3MlCcs1wJlqoHHK7mQ": {
+        "nickname": [
+          "You me"
+        ],
+        "predict": [
+          "0.8347538"
+        ],
+        "comment": [
+          "\ubbff\uc5c8\ub294\ub370 \uacb0\uad6d \uc9dc\uace0\uce58\ub294 \uacf5\uc911\ud30c \uc9c0\uc0c1\ud30c\ucc98\ub7fc\ub42b\uad70\uc694 \u3145\u3131\ud558\uc138\uc6a9\u315c"
+        ]
+      },
+      "UC2qNctdHQFggKH-0bfILx0g": {
+        "nickname": [
+          "W The"
+        ],
+        "predict": [
+          "0.9946561"
+        ],
+        "comment": [
+          "\uc57c \uc0dd\uac01\uc744\ud574\ubd10 \uc9c0\uae08\ub3c4 \uc545\ud50c\ub7ec\ub4e4 \u3148\u3134\uc545\ud50c\ub2ec\uc544\uc11c \ub9e4\uc7a5\ub2f9\ud558\uace0 \uc788\ub294\ub370<br />\uc790\uc9c4\ud1f4\uc18c \uacf5\uac1c\ud558\uba74 2,5,6\ubc88 \uc804\ubd80<br />\ubc29\uc1a1\uc778\uc0dd \ub2e4 \ub9dd\ud558\uace0 \ub098\ub77d\uac00\ub294\ub370 \uacf5\uac1c\ud558\uaca0\ub0d0.<br />\uadf8\ub9ac\uace0 2,5,6\uc774 \uacf5\uac1c\ud558\uc9c0\ub9d0\ub77c\uace0 \ubd80\ud0c1\ud574\uc11c \ucc9c\uc0ac\ud3b8\uc9d1 \ud55c\uac70\uc784"
+        ]
+      },
+      "UCYva2SnFf3JpVmOD2sJzKOg": {
+        "nickname": [
+          "\ube75\uafb8\ub625\uafb8"
+        ],
+        "predict": [
+          "0.99764234"
+        ],
+        "comment": [
+          "\uc544\ub2c8 \uc560\ub4e4\uc544 6\ubc88\uc774 \ud3b8\uc9d1\ud558\ub77c\uace0 \uc785\uae40\ub123\uc5c8\ub2e4\uace0 \ubc29\uae08 \uc0dd\ubc29\uc5d0\uc11c \uc778\uc815\ud568.<br />\uc9c4\uc6a9\uc9c4\uc774 \uc798\ubabb\ud55c\uac83\ub3c4 \ub9de\uae34\ud55c\ub370 \uc2dc\ubc1c <br />5.5\ud654 \uc548\uad81\uae08\ud558\ub0d0 \ub108\ud76c?<br />\uc9c4\uc6a9\uc9c4\ud55c\ud14c \uc9c0\ub784\ud560\ub54c\uac00 \uc544\ub2c8\uc57c \uc2dc\ubc1c <br />\ub09c 6\ubc88 \uc545\ud50c\uc4f4\uc801 \ud55c\ubc88\ub3c4 \uc5c6\ub294\ub370 \uc883\uac19\ub124."
+        ]
+      },
+      "UCZIVO80FaSxkcOIKrDwKstA": {
+        "nickname": [
+          "Lululalalululala Lululalalululala"
+        ],
+        "predict": [
+          "0.9843277"
+        ],
+        "comment": [
+          "\ud53c\ud574\uc790\ub294 \ub2e5\uce58\uace0 \uacc4\uc138\uc694"
+        ]
+      },
+      "UCepjzYDoPprltuGC3Vm0eRQ": {
+        "nickname": [
+          "\uc774\ubbfc\ucca0"
+        ],
+        "predict": [
+          "0.9973757"
+        ],
+        "comment": [
+          "\uc904 \uc9dc\ub974\uba70\ub274\uc5b4\uca54\uac74\ub370 \u314b\u314b\u314b\u314b<br />\ubc29 \ubb38 \uc5f4\uace0\ub2e4\ub2c8\uba74 -80%\u314b\u314b"
+        ]
+      },
+      "UC_-1U3M0R4CgHxkWDcEhL0Q": {
+        "nickname": [
+          "\uc6cc\uc6cd"
+        ],
+        "predict": [
+          "0.98629737"
+        ],
+        "comment": [
+          "\u314b\u314b\u314b 3\ubc88 7\ubc88\uc740 \uc9c4\uc9dc \uc544\uc26c\uc6b4\uac8c \uc65c \uc5ec\uc790\ub4e4\ud55c\ud14c \ubd99\uc5b4\uc11c \uc560\ucd08\uc5d0 \ub0a8\uc790 \uc5ec\uc790 \uac08\ub9b0\uad6c\ub3c4\uc5d0\uc11c \ubc15\uc950\uc9d3\uc744 \ud588\uc744\uae4c \uadf8\ub2e4\uc74c\uc740 \uc790\uc2e0\ub4e4\uc77c\uac70\ub780 \uc0dd\uac01\uc744 \ubabb\ud588\ub098 \uadf8 \uc804\ub0a0 \uc804\uae30\uac00 \uadf8\ub807\uac8c 1\ubc88\uc744 \uac10\uc30c\ub358 \uc774\uc720\uac00 \ub0a8\uc790\uc5ec\uc790 \uad6c\ub3c4\uc5d0\uc11c \uba38\ub9ac\uc218\uac00 \ub538\ub824\uc11c \uadf8\ub7f0\uac74\ub370 \uc5ec\uc790\uc758 \uc8fc\ucd95\uc911 \ud55c\uba85\uc778 \uc721\uc528\uac00 \ub098\uac04\uc785\uc7a5\uc5d0\uc11c \uc0c8\ub85c \ub4e4\uc5b4\uc628 2\ubc88\uc744 \ud68c\uc720\ud574\uc11c 6\ubc88\uc744 \uac08\uc558\uc73c\uba74 \uba38\ub2c8+\ud589\ubcf5 \u3147\u314b\ub294 \ubcf8\uc778\ub4e4\uc774 \ub418\ub294\uac74\ub370 \u314b\u314b\uc544\uc27d\ub530"
+        ]
+      },
+      "UCRSmlBmZIlrK9YruHBG0zWg": {
+        "nickname": [
+          "\uc784\ub300\ud604"
+        ],
+        "predict": [
+          "0.9886389"
+        ],
+        "comment": [
+          "\uc790\uc790 \uc720\ucd9c\ub41c \ub0b4\uc6a9\uc774\ub2e4 \uc2a4\ud3ec \uc2eb\uc740 \ub144\ub4e4\uc740 \uc790\uc138\ud788\ubcf4\uae30 \ub204\ub974\uc9c0\ub9c8\ub77c  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />\ud22c\ud45c 1\ud68c\ucc28\uc5d0 \uacf5\ud601\uc900 \ud0c8\ub77d.2\ud68c\ucc28\uc5d0 \uc804\uae30 \ud0c8\ub77d \uc5ec\uae30\uc11c \uc0b0\ubc94\uc774 \uc790\uae30\ub294 \ub300\uccb4\uc790\ub2c8\uae50 \ub2e4\ub978\uc0c8\uae30\ub4e4\uc774 \uc790\uae30 \ud0c8\ub77d\uc2dc\ud0ac\uac70\ub77c\uace0\uc0dd\uac01\ud568 \uadfc\ub370 \ub098\uba38\uc9c0 \uc560\ub4e4\uc740 \uc9c4\uc9dc \uadf8\ub7ec\ub824\uace0\ud588\uc74c \u314b\u314b\u314b\u314b\uca0b\ub4e0 \uc0b0\ubc94\uc740 \uc790\uae30 \ud0c8\ub77d\ud560\uac70\uc54c\uace0 \ud604\uae08 197\ub9cc\uc6d0\uc744 \uad6c\ub9e4\ud55c\ud6c4\uc5d0 \uadf8\uac78 \uac00\uc9c0\uace0 \uc790\uc9c4\ud1f4\uc18c\ud568\u314b\u314b\u314b"
+        ]
+      },
+      "UCArZjUP-18hoDslpK6Jgm6w": {
+        "nickname": [
+          "\uc640\uc6b0"
+        ],
+        "predict": [
+          "0.9973015"
+        ],
+        "comment": [
+          "\uc778\ud130\ud3f0 \uc120 \uc808\ub2e8\ud574\ub194\ub3c4 \uae08\ubc29 \uace0\uce58\ub294\ub370 \u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b"
+        ]
+      },
+      "UCmaNbkGI0t-RcZMZPCmwKAg": {
+        "nickname": [
+          "\ub124\uc784\ub2c9"
+        ],
+        "predict": [
+          "0.9515814"
+        ],
+        "comment": [
+          "\uc544\ub2c8 \uc560\ucd08\uc5d0 \ubc11\ubc14\ub2e5\uae4c\uc9c0 \ubcf4\uace0\uc2f6\uc5b4\uc11c \ud55c\uac70 \uc544\ub2c8\ub0d0? \uba38\ub2c8\uac8c\uc784\uc744? \uc874\ub0b4\uc774\ud574\uc548\uac00\ub124 \uc9c4\uc6a9\uc9c4\uc544"
+        ]
+      },
+      "UCnGDdsR6nP7_e7Ye6x-UsJg": {
+        "nickname": [
+          "\ucc59\uad6c"
+        ],
+        "predict": [
+          "0.98924375"
+        ],
+        "comment": [
+          "\ub098 \uc9c4\uc9dc \uad81\uae08\ud55c\uac8c \ub108\ubb34 \ub9ce\uc544 <br />\uba3c\uc800 <br />1. \uc774\ub54c\ubd80\ud130 \uacf5\ud601\uc900\uc774\ub791 \uc0b0\ubc94\uc774\ub791 \uc0ac\uadc0\uc5c8\ub358 \uac70\uc784 ? \uc544\ub2c8\uba74 \uc378 ? \uc544\ub2c8\uba74 \uc544\uc608 \ubaa8\ub974\ub294 \uc0ac\uc774 ? <br /><br />2. \uac04\uc774 \ubcc0\uae30 \uc5c6\ub294\ub370 \uc5b4\ub5bb\uac8c \uc18c\ubcc0\ubcf4\uace0 \ub300\ubcc0\ubd10 ? <br /> <br />3. \uba38\ub9ac\ub294 \uc5b4\ub5bb\uac8c \uac10\uc544 ..?? <br /><br />4. \uc124\ub9c8 \uc591\uce58\ud558\ub294 \uac83\ub3c4 \ub3c8\ub0b4\uace0 \uc591\uce58\ud574 ..??<br /><br />5. \uc5ec\uae30 \uc788\ub294 \ub0b4\ub0b4 \uc18d\uc637\ub3c4 \ubabb \uac08\uc544 \uc785\uc5b4 ..?<br /><br />\uc774\uac83\ub4e4 \uc544\ub294\uc0ac\ub78c \uc81c\ubc1c \uc54c\ub824\uc918 .. \ub098 \uc9c4\uc9dc \ubcf4\ub294 \ub0b4\ub0b4 \uad81\uae08\ud574 \uc8fd\uc5b4 .."
+        ]
+      },
+      "UCz0hsxMhDtLQpzTuPyNf2zQ": {
+        "nickname": [
+          "\uc544\uc774\ub374\ud2f0\ud2f0"
+        ],
+        "predict": [
+          "0.9976422"
+        ],
+        "comment": [
+          "\uc9c4\uc6a9\uc9c4\uc544 \ub2c8\uac00 \uc800\uae30 \ub4e4\uc5b4\uac14\uc5b4\uc57c \ud588\ub2e4 \ub09c \ub108\ub3c4 \uc880 \uc774\uc0c1\ud55c\uac70 \uac19\uac70\ub4e0 \ub108\uc758 \uc2e4\uccb4\ub97c \uc54c\uace0\uc2f6\ub2e4"
+        ]
+      },
+      "UCqZsx_L3xZGJvY8bsxaVvrg": {
+        "nickname": [
+          "\ud478\uba39"
+        ],
+        "predict": [
+          "0.99378777"
+        ],
+        "comment": [
+          "\ub300\uccb4\uc790\uac00 \uafc0\uc774\ub124\u314b\u314b \uac11\uc73c\ub85c \ubc14\ub010\uc0c1\ud0dc\uc5d0 \uc2dc\uc791 \u314b\u314b"
+        ]
+      },
+      "UCECEsu7H3uY7v_pAjgCeyyA": {
+        "nickname": [
+          "\ub54c\ud53c\uce74\uc18c\ubc1c\uac00\ub77d"
+        ],
+        "predict": [
+          "0.9431075"
+        ],
+        "comment": [
+          "\uc774\ubbf8 \uc9c0\ub4e4\ub07c\ub9ac \ud569\uc2ec\ud574\uc11c \ub2f4\ubc30\ubb38\uc81c\ub85c 1\ubc88 \ud1f4\uc18c\uc2dc\ud0ac\ub824\ub294\ub370 \uadf8\ub7fc 1\ubc18\uc774 \uac00\ub9cc\ud788 \ub2f9\ud574\uc90c??"
+        ]
+      },
+      "UCWhLpTsYTukjeD6b3TYVISg": {
+        "nickname": [
+          "\ucd5c\ud55c\uc9c4"
+        ],
+        "predict": [
+          "0.9808358"
+        ],
+        "comment": [
+          "7\ud654 \uc5c5\ub85c\ub4dc \uc5b8\uc81c \ud558\ub098\uc694"
+        ]
+      },
+      "UCOMmb_WDW8gHC-mdL06EcZw": {
+        "nickname": [
+          "\uc804\uae30\uacf5\ud559\uacfc"
+        ],
+        "predict": [
+          "0.9704554"
+        ],
+        "comment": [
+          "\u314b\u314b \ud2f0\ub97c \ub0b4\uc694 ~"
+        ]
+      },
+      "UCEjQ6rbEgbtALdYOhOiQ8NA": {
+        "nickname": [
+          "\ud0d1\uc2e0\ubcd1\uc790"
+        ],
+        "predict": [
+          "0.9971529"
+        ],
+        "comment": [
+          "\uc560\ucd08\uc5d0 \ub3c8\uc744 \uc544\ub07c\uba70 \uc0b4\uc544\uac00\ub294 \uac9c\uc778\ub370 \uc220\uccd0\uba39\ub294\uac70 \uc790\uccb4\uac00 \ub9dd\uc098\uc774\uc5c8\uc74c"
+        ]
+      },
+      "UCmr7XsGtyt9_R2NFsJFO2iw": {
+        "nickname": [
+          "\uc720\ub810\ub808"
+        ],
+        "predict": [
+          "0.9975096"
+        ],
+        "comment": [
+          "\uc640 \u3145\u3142 \uae30\ubb3c\ud30c\uc190 \ub418\uba74 \uc804\uae30\ud1b1\uc0ac\uc11c \ubcbd \ub6ab\uc5b4\ub3c4 \ub418\uaca0\ub124 \u314b\u314b"
+        ]
+      },
+      "UC5gBFZJ6DZiibA-s978fsHg": {
+        "nickname": [
+          "\uae40\uc774\ud658"
+        ],
+        "predict": [
+          "0.9938876"
+        ],
+        "comment": [
+          "\uc6d0\uc791\ubcf4\uba74 \ubb34\ub825\uc73c\ub85c \uac00\ub2a5\ud558\uba74 \uad1c\ucc2e\uc744\uaec4? \uc804\uae30\ud1b1 \uc790\uccb4\ub294 \ubabb \uc0ac\uaca0\uc9c0\ub9cc"
+        ]
+      },
+      "UCBPlHiUq__92gzbzpFrcb3Q": {
+        "nickname": [
+          "\uae40\uc6b0\uc7ac"
+        ],
+        "predict": [
+          "0.94515425"
+        ],
+        "comment": [
+          "<a href=\"https://www.youtube.com/watch?v=r0mgs7YoeCc&amp;t=11m00s\">11:00</a> \ubbf8\uce5c \u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b"
+        ]
+      },
+      "UCTc8qghZAsQlcwQ19DE7VpA": {
+        "nickname": [
+          "\uc740\uc874\uc9c0"
+        ],
+        "predict": [
+          "0.9964489"
+        ],
+        "comment": [
+          "\uc0b0\ubc94\uc774\ub294 \ubb58 \uadf8\ub798 \ub9ce\uc774\uba39\uc5c8\ub098 \uc0b4\uc774 \ubd99\uc5c8\ub124"
+        ]
+      },
+      "UCK8iVfpcbCfyEC9YkNw6oNA": {
+        "nickname": [
+          "Ko Ne"
+        ],
+        "predict": [
+          "0.9601176"
+        ],
+        "comment": [
+          "\uba38\ub2c8\uac8c\uc784 \ub9ac\ubdf0 \ud6c4 \ub313\uae00\ubcf4\uace0 \uc790\uc544\uc131\ucc30\uacfc \uae68\ub2ec\uc74c\uc744 \uc5bb\uc5c8\uc744\uae4c\ub3c4"
+        ]
+      },
+      "UC2yG9UCdmfB5YrHlkn6pnAw": {
+        "nickname": [
+          "\uc624\ubbfc\uaddc"
+        ],
+        "predict": [
+          "0.9369031"
+        ],
+        "comment": [
+          "\uad00\uc0c1\uc774 \uc77c\ubcf8 \uc55e\uc7a1\uc774 \uad00\uc0c1\uc774\uc57c \ub2c9\ubd80\ud130 \uac00\uc624\uac00\uc774\uc790\ub098\u314b\u314b\u314b\u314b"
+        ]
+      },
+      "UCxZ-ItkC99DZoc4Q7bT83uA": {
+        "nickname": [
+          "\ubc15\uc0c1\ud601"
+        ],
+        "predict": [
+          "0.99761933"
+        ],
+        "comment": [
+          "\uc5ec\uc790\ub4e4 \ud6c8\ub828\uc18c \ubcf4\ub0b4\uba74 \uc548\ub418\ub294 \ub300\ud45c\uc801\uc778 \uc608\uc2dc\ub97c 40\ubd84\uc9dc\ub9ac \uc601\uc0c1\uc73c\ub85c \ubcf4\uc5ec\uc8fc\ub124\u314b\u314b<br />\uc800 \uc131\ubcc4\uc740 \uadf8\ub0e5 \uc9d1\uc5d0\uc11c \uc124\uac70\uc9c0\ub098 \ud558\ub294\uac8c \ub098\ub77c\uc0b4\ub9bc \ub3c4\uc640\uc8fc\ub294 \uc9c0\ub984\uae38\uc774\ub2e4<br />\uc61b\ub0a0\ubd80\ud130 \uad1c\ud788 \uc5ec\uc790\ub4e4 \ud558\ub4f1\uc2dc\ud558\uace0 \ud22c\ud45c\uad8c\ub3c4 \uc548 \uc8fc\ub294 \uc774\uc720\uac00 \ub2e4 \uc788\uc74c\u314b\u314b\u314b\u314b\u314b\u314b"
+        ]
+      },
+      "UC9MM3-5IvG081YrXQ7CbY8A": {
+        "nickname": [
+          "\ub8e8\uc2dc\ub9ac\uc2a4"
+        ],
+        "predict": [
+          "0.9954984"
+        ],
+        "comment": [
+          "\uadf8\ub0e5 5\ud654\uc5d0\uc11c \ub05d\ub0b4\ub294\uac8c \ub098\uc558\uc744\ub4ef<br />\uc5b4\uc9dc\ud53c \uc5ec\uc790\ud300\uc774 \uc790\uc9c4 \ud1f4\uc18c\ud558\uba74\uc11c \ub3c8\uc5d0\ub300\ud55c \uc9d1\ucc29\uc744 \ubc84\ub9b0 \uc0c1\ud669\uc5d0\uc11c \ubb34\uc2a8 \uba38\ub2c8 \uac8c\uc784\uc774 \ub429\ub2c8\uae4c? \uc9c0\uae08\ucc98\ub7fc \uc2e4\ud328\ud558\uba74 \ubcf4\ubcf5\uc18c\ube44\ub85c \ub3c8\uc774 0 \uc0c1\ud669\uc744 \ub450\ub824\uc6cc \ud558\uc9c8 \uc54a\ub294\ub370 <br />\uc0dd\uac01\ub3c4 \uc5c6\uace0 \uae34\uc7a5\ub3c4 \uc5c6\uace0 \uc2e4\ub9dd\uc774 \ud06c\ub124\uc694"
+        ]
+      },
+      "UC9zY61rS9hCiV6eRMW7PIog": {
+        "nickname": [
+          "Haha Haha"
+        ],
+        "predict": [
+          "0.99589694"
+        ],
+        "comment": [
+          "\ud22c\uc790\uc790\uac00 \ub354 \uc774\uc5b4\uac00\ub77c \ud558\uc9c0 \uc54a\uc558\uc744\uae4c \uc2f6\uc74c  \ud22c\uc790\uc790\uc785\uc7a5\uc5d0\uc120 5\ud654 \ubd84\ub7c9\uc73c\ub85c \ub05d\ub0b4\ubc84\ub9ac\uba74 \ub4b7\ubaa9\uc7a1\uc744\uac70 \uac19\uae34\ud568.....\uc9c4\uc9dc \ubb34\uc2a8 \uc0dd\uac01\uc73c\ub85c 4\uc778\ud1f4\uc18c\ud574\uc11c \uac8c\uc784 \ud3ed\ud30c\uc2dc\ud0a4\ub824 \ud55c\uac74\uc9c0 \uc774\ud574\uac00\uc548\uac10 \ub2e8\uc9c0 \uc9c0\ub4e4 \ud654\ub0ac\ub2e8 \uc774\uc720\ub85c;;;;;;"
+        ]
+      },
+      "UCcAFakNc6H8EHzIR9625EHg": {
+        "nickname": [
+          "\uae09\uc2dd\ucda9\uc0ac\ub0e5\uafbc"
+        ],
+        "predict": [
+          "0.9951776"
+        ],
+        "comment": [
+          "\uc5b4\ub51c\uac00\ub098 \uc131\ubcc4\ub85c \ud3b8\uac00\ub974\ub294\uac74 \ud56d\uc0c1 \uc5ec\uc790\ub4e4\uc774 \uba3c\uc800\uad6c\ub9cc? \uc800\ub7ec\ub2c8\uae4c \uc9d1\ub2e8\ud1f4\uc18c\ub85c \ud611\ubc15\ud558\uace0 \uc8fc\ub3c4\uad8c \uac00\uc838\uac00\uace0 \ub178\uc7bc\ub420\uc218\ubc16\uc5d0 \uc5c6\uc9c0"
+        ]
+      },
+      "UCm7AQza4jS_B8PXCCkvJHnw": {
+        "nickname": [
+          "\uac1c\ubc1c\uc790"
+        ],
+        "predict": [
+          "0.99593073"
+        ],
+        "comment": [
+          "<a href=\"https://www.youtube.com/watch?v=r0mgs7YoeCc&amp;t=6m20s\">6:20</a> \uc9c4\uc2ec\uc73c\ub85c \uc0ac\uacfc\ud574\uc11c \uae30\ubd84\ud480\ub9b0\uac8c \uc544\ub2c8\ub77c \uc0e4\uc6cc\ud558\uace0 \uc640\uc11c \uae30\ubd84\uc774 \ud480\ub9b0\uac70\uaca0\uc9c0 \u314b\u314b"
+        ]
+      },
+      "UCDT9gDrGKwzzG6yCPMK9YFw": {
+        "nickname": [
+          "\ud56b\uc9c0\uc1e0\uc9c0"
+        ],
+        "predict": [
+          "0.9051796"
+        ],
+        "comment": [
+          "\u314b\u314b\u314b\u314b\u314b\u3139\u3147 \ucca8\ubd80\ud130 \uc5ec\uc790\ub4e4\ub07c\ub9ac \ub2e8\uccb4 \uc790\uc9c4\ud1f4\uc18c \uc2a4\ud0ac \uc37b\uc73c\uba74 4\uc5b58\ucc9c\uadf8\ub300\ub85c \ub0a8\uacbc\uc744\ub4ef \ucff8\u314b\u314b"
+        ]
+      },
+      "UCl_vyXuCdPjfBR4hSbU4QZA": {
+        "nickname": [
+          "\ucd5c\uc218\uc601"
+        ],
+        "predict": [
+          "0.997591"
+        ],
+        "comment": [
+          "\uc5ec\uc790\ub4e4 \uc0c1\uae08\uc8fc\uc9c0\ub9c8\ub77c \uc774\ub530\uad6c\ub85c \ud558\uace0 \ub3c8\ubc1b\ub0d0? \uc904\uac70\uba74 8\ubc88\ub9cc\uc918\ub77c 6\ubc88\uc740 \ud558...\uc9c4\uc9dc"
+        ]
+      },
+      "UCzs8Wqyn3iQhiYATNJPeDrQ": {
+        "nickname": [
+          "Korea Dimchae"
+        ],
+        "predict": [
+          "0.9964491"
+        ],
+        "comment": [
+          "\uc790\uae30\ub4e4\uc740 \uc220\ub9c8\uc2dc\uba70 \ub3c8 \ub9c9\uc368\ub193\uace0 \ub2f4\ubc30\ub85c \uc815\uce58\uc9c8\uc5d0 \uacb0\uad6d \uc9d1\ub2e8\ud1f4\uc18c\ub85c \uad8c\ub825\uae4c\uc9c0 \uc190\uc5d0 \ub123\ub124\u314b\u314b \uc544 \ud0b9\ubc1b\ub204"
+        ]
+      },
+      "UC3YX0Uj71vwYMZFGtvPMV1g": {
+        "nickname": [
+          "Entrepreneur Yang"
+        ],
+        "predict": [
+          "0.99680245"
+        ],
+        "comment": [
+          "\uba38\ub2c8\uac8c\uc784\ub9cc \ubd10\ub3c4 &#39;\uc5ec\uc131\uacc4&#39;\uac00 \uc5b4\ub5bb\uac8c \uc0ac\ud68c\ub97c \uc7a0\uc2dd\ud558\ub294\uc9c0 \ubcf4\uc778\ub2e4. <br />\r<br />\r<br />\uc815\ubd80 = \uc81c\uc791\uc9c4\r<br />\uc5ec\ub2f9 = \uad11\uace0\uc8fc \r<br />\uc5b8\ub860 = \ud3b8\uc9d1\uc790\r<br />\ub808\ub514\uceec \ud398\ubbf8\ub2c8\uc2a4\ud2b8 = 6\ubc88 \r<br />\ud398\ubbf8\uace0 \ubb50\uace0 \uac1c\uafc0 \ube68\uba74\uc11c \ube4c\ubd99\ub294 \uc5ec\uc131 = 5\ubc88\r<br />\uc9d1\ub2e8 \ud1f4\uc18c \ud611\ubc15 = \uc0ac\ubc95 \ubb34\ub825\ud654 \ub5bc\ubc95 \uc2dc\uc704 \r<br />\ub8f0 \ubc88\ubcf5 = \uc0ac\ubc95 \ud30c\uad34, \ubb34\uc9c0\uc131 \ud310\ub840 \uc0dd\uc131\r<br />\uc220 \ud37c\uba39\uace0 \ub2f4\ubc30 \ud611\ubc15 = \uc5f0\uc608\uc778 \uc131\ud76c\ub871, \uc5ec\uc790 N\ubc88\ubc29 \uc0ac\ud0dc LH\ub85c\ub0a8\ubd88 <br />\r<br />\r<br /><br />\ub2e4\ub4e4 \uc65c \ube61\uccd0\uc788\ub294\uc904 \uac10\uc774 \uc624\ub098? <br />\r<br />\uc778\uc0dd \uc870\uc9c8 \ubed4\ud55c \uc9c4\uc6a9\uc9c4\uc528?"
+        ]
+      },
+      "UCPcsitlE6eEQZtbW_cvWRKA": {
+        "nickname": [
+          "Jack Davide"
+        ],
+        "predict": [
+          "0.9959836"
+        ],
+        "comment": [
+          "\uc5ec\uae30\uc11c\ub3c4 \ud398\ubbf8\uac8c\uc784\uc744 \ubd10\uc57c\ud558\ub0d0?\u314b\u314b \uc774\ub7f4\uac70\uba74 \uc5ec\uc790\ub4e4\ub9cc \uc2f9 \ubaa8\uc544\uc11c \uac8c\uc784\ud574\ub77c\u314b\u314b \uac1c\uafc0\uc7bc\uc77c\uac78? \uc5ec\uc790 \uc138\uba85\ub9cc \ubaa8\uc5ec\ub3c4 \ud300 \uc138\uac1c\ub294 \ub9cc\ub4e4\uc9c0 \uc54a\ub0d0?\u314b"
+        ]
+      },
+      "UC6RNCKETLmnPzbcXcfnGz2Q": {
+        "nickname": [
+          "\ub0a8\uacbd\ud604"
+        ],
+        "predict": [
+          "0.98135823"
+        ],
+        "comment": [
+          "\uc81c\ubc1c \uc800\ucc98\ub7fc \ub3c8\uc774 \ud544\uc694\ud558\uace0 \uc808\uc2e4\ud55c \uc77c\ubc18\uc778\ub9cc \uc368\uc694"
+        ]
+      },
+      "UCqIbXif0NB-NXXt3Xito2vQ": {
+        "nickname": [
+          "\ub9c9\ud0c0\uafbc"
+        ],
+        "predict": [
+          "0.9972625"
+        ],
+        "comment": [
+          "\u25cf\uc790\uc9c4\ud1f4\uc18c \ud611\ubc15 \uac1c\uc778\uc18c\uacac\u25cf<br>\uc61b\ub0a0\uc5d0 \uc9d1\uadfc\ucc98\uc5d0 \ubc14\ub2e4\uc774\uc57c\uae30(\ub3c4\ubc15\uc2dc\uc124)\uc774 \uc788\uc5c8\ub294\ub370 \uc5b4\ub5a4 \uc544\uc800\uc528\uac00 \ub3c8\uc744 \ub2e4 \ud138\ub9ac\uc168\ub294\uc9c0 \uc601\uc5c5\uc7a5\uc5d0\ub2e4 \ud718\ubc1c\ub958 \ubfcc\ub9ac\uace0 \uac19\uc774 \uc8fd\uc790!!!\ud558\uba74\uc11c \uc2e4\ub791\uc774 \ud558\ub358 \uae30\uc5b5\uc774 \ub0ac\uc5b4\uc694...\uadf8\uac70\ub791 \ub2e4\ub97c\uac8c \uc5c6\uc5b4\ubcf4\uc600\uc5b4\uc694...<br>\uc774\uae30\uc2ec\uc774 \ubd88\ub7ec\uc628 \ubd84\uc704\uae30 \ucd08\uc0c1\uc9d1+\ud3b8\uc9d1\ub418\uc5b4\ubc84\ub9b0 \ub0b4\uc6a9\ub4e4\uc774 \uc544\uc27d\ub124\uc694...<br>\uc815\ub9ac : \uac04\uc808\ud568Zero"
+        ]
+      },
+      "UCGc7HnVimEwKEMir1A0GrIw": {
+        "nickname": [
+          "\uac15\uc5c4\ubc30"
+        ],
+        "predict": [
+          "0.9975612"
+        ],
+        "comment": [
+          "\uc544\ub2c8 \uc774\uc815\ub3c4\uba74 \uc6a9\uc9c4\uc774\ud615 \uc5ec\uc790\ub4e4 \ubbfc\uc2ec \ub098\ub77d\uc73c\ub85c \ubcf4\ub0b4\ub824\uace0\uc628 \uc790\uac1d\uc218\uc900\uc778\ub370 \u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b"
+        ]
+      },
+      "UCRU8-Mtp2GW2jPYkoIAITkg": {
+        "nickname": [
+          "\uc775\uba85"
+        ],
+        "predict": [
+          "0.86625373"
+        ],
+        "comment": [
+          "\uc6a9\uc9c4\uc544 \ub9de\uc9f1 \ud55c \ubc88 \ub728\uc790 \uc9c4\uc9c0\ud558\ub2e4"
+        ]
+      },
+      "UC6ZTAnMAjmNhSVmoJW95aHw": {
+        "nickname": [
+          "\uc720\uc120\ube48"
+        ],
+        "predict": [
+          "0.99739265"
+        ],
+        "comment": [
+          "\uc9d1\ub2e8\ud1f4\uc18c \uc62c\ub9ac\uba74 \ub108\ub124 \ucc38\uac00\uc790\ub4e4 \uc695 \u3148\u3134 \ud560\uac70\uc796\uc544\u3160\u3160\uadf8\ub0e5 \uc62c\ub824\uc8fc\ub294\uac70\ub098 \ubcf4\uc790 \uc598\ub4e4\uc544"
+        ]
+      },
+      "UC9CkoLQiHCVy1O14eTxJaZg": {
+        "nickname": [
+          "\ubc15\uc900\ud615"
+        ],
+        "predict": [
+          "0.924601"
+        ],
+        "comment": [
+          "\uc695\uba39\uc744\ub9cc\ud558\ub2c8\uae4c \uc695\uc744 \ud558\ub294\uac70\uc9c0 \uc774\ub9cc\ud07c \uc870\ud68c\uc218\ube68\uba74 \uc81c\ub300\ub85c \ud574\uc57c\ub418\ub294\uac70 \uc544\ub2d8? \uba38\ub2c8\uac8c\uc784 \uc65c \ubcf4\ub294\ub370 \ub9ac\uc5bc\ub9ac\ud2f0\uc5d0\uc11c \uc624\ub294 \uc7ac\ubbf8\ub54c\ubb38\uc5d0 \ubcf4\ub294\uac74\ub370 \uc9c0\ub4e4 \uc785\ub9db\ub300\ub85c \ud558\uba74 \uadf8\uac8c \ub9d0\uc774 \ub418\ub0d0"
+        ]
+      },
+      "UC63E-eStfK5J4AENm3f6HFg": {
+        "nickname": [
+          "\ub0b4\uac00\ub108\uc88b\uc544\ud560\uc218\uc788\uc796\uc544"
+        ],
+        "predict": [
+          "0.9966425"
+        ],
+        "comment": [
+          "\ub0a8\uc790\ub294 \uc5ec\uc790\ub9d0\ub4e4\uc5b4\uc57c \ud3b8\ud558\ub2e4 \ub77c\ub294 \ub9d0\uc774 \uc65c \uc0dd\uacbc\ub294\uc9c0 \uc774\uac78\ubcf4\uba74 \ub098\uc634 <br />\ubaa8\ub4e0\uac78 \ub17c\ub9ac\uc801\uc774\uc9c0 \ubabb\ud558\uace0 \uac10\uc815\uc801\uc73c\ub85c\ub9cc \ud310\ub2e8\ud558\uace0 \ud589\ub3d9\ud558\ub2c8\uae50 \uac70\uae30\uc5d0 \ub300\uc751\ud558\uba74 \ub0a8\uc790\ub4e4\uc774 \ud53c\uace4\ud574\uc9c0\ub2c8 \uadf8\ub0e5 \uc5b4 \uadf8\ub798 \uc54c\uc558\uc5b4 \ub77c\uace0 \ub118\uc5b4\uac00\ub77c\ub77c\ub294 \ub9d0\uc744 \uc800\ub807\uac8c \ud45c\ud604\ud55c\uac70\uc784 \u314b"
+        ]
+      },
+      "UCHtRtmcQ3SkINEwWp6YKbxQ": {
+        "nickname": [
+          "\uc774\ud559\ubbfc"
+        ],
+        "predict": [
+          "0.9973774"
+        ],
+        "comment": [
+          "\uba38\ub2c8\uac8c\uc784\uc740 \uc0ac\uc2e4\uc0c1 \ub05d\uc774\uace0 \ud601\uc900\uc0c1 \ub7ec\ube0c\uc2a4\ud1a0\ub9ac\ub098 \ubd10\uc57c\uaca0\ub124\uc694"
+        ]
+      },
+      "UCkHzwgeE2aBt1btxQLKCQPA": {
+        "nickname": [
+          "\ucd5c\ub3d9\uc11d"
+        ],
+        "predict": [
+          "0.9973959"
+        ],
+        "comment": [
+          "@\uc138\uc904\uba38\ub4dc \ub300\uccb4\uc790 \ub123\uace0 8\uc77c\ucc28 \ub8f0 \uc801\uc6a9\ud558\uba74 \uc5b4\ub5bb\uac8c \ub418\uaca0\uc74c \ub2c8\uac00 \uc0dd\uac01\ud574\ubd10."
+        ]
+      },
+      "UC-DRQrvqyVTi1Ike-wEi5RQ": {
+        "nickname": [
+          "\uae40\ub2e4\uc601"
+        ],
+        "predict": [
+          "0.9947378"
+        ],
+        "comment": [
+          "\uc9c4\uc9dc \uad81\uae08\ud55c\uac74\ub370\uc694 1\ubc88\uc740 \uc815\ubcf4\uc0c0\uc73c\ub2c8\uae4c \uadf8\ub807\ub2e4\uace0 \uce58\uace0 4\ubc88\uc740 \uc65c \uacc4\uc18d \ud22c\ud45c\ud558\uc790\uace0 \ud558\ub294\uac70\uc9c0"
+        ]
+      },
+      "UCE8onQ3jgR9cRWJvIrkjEKQ": {
+        "nickname": [
+          "\uc724\uc815\ud604"
+        ],
+        "predict": [
+          "0.89833456"
+        ],
+        "comment": [
+          "\ubbf8\uce5c \uc0b0\ubc94 \uacf5\ud601\uc90c \uc774\uac8c \ube4c\ub4dc\uc5c5\uc774\uc5c8\uad6c\ub098"
+        ]
+      },
+      "UChftKuSY1Om1FDExD9GZKDA": {
+        "nickname": [
+          "W. Jung"
+        ],
+        "predict": [
+          "0.9928889"
+        ],
+        "comment": [
+          "\uba38\ub2c8\uac8c\uc784\uc5d0\ub3c4 \uae40\uc81c\ub3d9 \uac19\uc740\ub188\uc774 \uc788\uc5c8\ub098\ubcf4\ub124 \u3132\u3132\u3132"
+        ]
+      },
+      "UCFdAw86hPsW3eJg7ovR_76A": {
+        "nickname": [
+          "\uc724\uc7ac\ubbfc\u119e258\ub144 \uc804"
+        ],
+        "predict": [
+          "0.9977443"
+        ],
+        "comment": [
+          "\uc5ec\uc790\ub4e4 \ub5bc\ubc95\uc73c\ub85c \uc790\uc9c4\ud1f4\uc18c \ud611\ubc15\ud588\ub2e4\uac00<br />\uc81c\uc791\uc9c4 \uac1c\uc785\uc73c\ub85c \ub0a8\uc790\ub4e4\ud55c\ud14c \uc0ac\uacfc\uc2dc\ud0a4\uace0<br />\uc5ec\uc790\ub4e4\uc774 \uc8fc\ub3c4\uad8c\uc7a1\uace0<br />\ub0a8\uc790\ub4e4 \uc2f9\ub2e4 \ub5a8\uad6c\uace0<br />\ub3c8 \uac00\uc838\uac00\ub358 \uc548\uac00\uc838\uac00\ub358 \uc5ec\uc790\ud300\uc774 \uc6b0\uc2b9<br />\uac1c\ubed4\ud558\uc96c ?? \u314b\u314b\u314b<br />\ud398\ubbf8\uac8c\uc784 \uac1c \uc5ed\uacb9\uc96c ?"
+        ]
+      },
+      "UCDJD_0iG1yi8VoyGfIr3zWQ": {
+        "nickname": [
+          "\uc76d\uba38"
+        ],
+        "predict": [
+          "0.99302363"
+        ],
+        "comment": [
+          "\uc9d1\ub2e8\ud1f4\uc18c \ud560\uac70\uc57c. \uc2dc\ucf1c\uc918. \uc548\ub3fc? \uadf8\ub7fc \uc6b0\ub9ac \uc758\uacac \ub4e4\uc5b4\uc918! /// \uc9d1\ub2e8\ud1f4\uc18c \ud560\uac70\uc57c. \uc2dc\ucf1c\uc918. \uc548\ub3fc? \uadf8\ub7fc \uc6b0\ub9ac \uc758\uacac \ub4e4\uc5b4\uc918! /// \uc9d1\ub2e8\ud1f4\uc18c \ud560\uac70\uc57c. \uc2dc\ucf1c\uc918. \uc548\ub3fc? \uadf8\ub7fc \uc6b0\ub9ac \uc758\uacac \ub4e4\uc5b4\uc918! /// \uc9d1\ub2e8\ud1f4\uc18c \ud560\uac70\uc57c. \uc2dc\ucf1c\uc918. \uc548\ub3fc? \uadf8\ub7fc \uc6b0\ub9ac \uc758\uacac \ub4e4\uc5b4\uc918! /// \uc9d1\ub2e8\ud1f4\uc18c \ud560\uac70\uc57c. \uc2dc\ucf1c\uc918. \uc548\ub3fc? \uadf8\ub7fc \uc6b0\ub9ac \uc758\uacac \ub4e4\uc5b4\uc918! /// \uc9d1\ub2e8\ud1f4\uc18c \ud560\uac70\uc57c. \uc2dc\ucf1c\uc918. \uc548\ub3fc? \uadf8\ub7fc \uc6b0\ub9ac \uc758\uacac \ub4e4\uc5b4\uc918! /// \uc9d1\ub2e8\ud1f4\uc18c \ud560\uac70\uc57c. \uc2dc\ucf1c\uc918. \uc548\ub3fc? \uadf8\ub7fc \uc6b0\ub9ac \uc758\uacac \ub4e4\uc5b4\uc918! /// \uc9d1\ub2e8\ud1f4\uc18c \ud560\uac70\uc57c. \uc2dc\ucf1c\uc918. \uc548\ub3fc? \uadf8\ub7fc \uc6b0\ub9ac \uc758\uacac \ub4e4\uc5b4\uc918! /// \uc9d1\ub2e8\ud1f4\uc18c \ud560\uac70\uc57c. \uc2dc\ucf1c\uc918. \uc548\ub3fc? \uadf8\ub7fc \uc6b0\ub9ac \uc758\uacac \ub4e4\uc5b4\uc918! /// \uc9d1\ub2e8\ud1f4\uc18c \ud560\uac70\uc57c. \uc2dc\ucf1c\uc918. \uc548\ub3fc? \uadf8\ub7fc \uc6b0\ub9ac \uc758\uacac \ub4e4\uc5b4\uc918! /// \uc9d1\ub2e8\ud1f4\uc18c \ud560\uac70\uc57c. \uc2dc\ucf1c\uc918. \uc548\ub3fc? \uadf8\ub7fc \uc6b0\ub9ac \uc758\uacac \ub4e4\uc5b4\uc918! /// \uc9d1\ub2e8\ud1f4\uc18c \ud560\uac70\uc57c. \uc2dc\ucf1c\uc918. \uc548\ub3fc? \uadf8\ub7fc \uc6b0\ub9ac \uc758\uacac \ub4e4\uc5b4\uc918! /// \uc9d1\ub2e8\ud1f4\uc18c \ud560\uac70\uc57c. \uc2dc\ucf1c\uc918. \uc548\ub3fc? \uadf8\ub7fc \uc6b0\ub9ac \uc758\uacac \ub4e4\uc5b4\uc918! /// \uc9d1\ub2e8\ud1f4\uc18c \ud560\uac70\uc57c. \uc2dc\ucf1c\uc918. \uc548\ub3fc? \uadf8\ub7fc \uc6b0\ub9ac \uc758\uacac \ub4e4\uc5b4\uc918! ///"
+        ]
+      },
+      "UChQpzmlWp4JuHHtRRqairVQ": {
+        "nickname": [
+          "\ubc15\uc885\ud601"
+        ],
+        "predict": [
+          "0.97406965"
+        ],
+        "comment": [
+          "<a href=\"https://www.youtube.com/watch?v=r0mgs7YoeCc&amp;t=11m40s\">11:40</a> \ud601\uc900\uc0c1 \ub2f4\ubc30 \uc228\uae30\ub294\uac70 \uac1c\uadc0\uc5fd\ub124 \u314b\u314b\u314b\u314b\u314b"
+        ]
+      },
+      "UC_IOMksPcyFrK0VSsej3CJQ": {
+        "nickname": [
+          "2705\uae40\uc815\uc778"
+        ],
+        "predict": [
+          "0.91469485"
+        ],
+        "comment": [
+          "\uc624\uc6b0 \ub108\ubb34 \uc7ac\ubc0c\uace0"
+        ]
+      },
+      "UCQ6VcA7w2DAdLTqHaP39IXw": {
+        "nickname": [
+          "seoyeo\u00f1"
+        ],
+        "predict": [
+          "0.8756822"
+        ],
+        "comment": [
+          "\uc5e5 \uadf8\ub86c \uc800\uac70 \ucc0d\uc740 \uc774\ud6c4\uc5d0 \uc0b0\ubc94\ub2d8\uc774\ub791 \ud601\uc900\ub2d8 \uc0ac\uadc4\uac74\uac00\uc601??"
+        ]
+      },
+      "UCJ42Sk3KnWATngtb1LHaHmA": {
+        "nickname": [
+          "\ubcc0\uc7ac\uc724"
+        ],
+        "predict": [
+          "0.99701166"
+        ],
+        "comment": [
+          "\uc9d1\ub2e8\ud1f4\uc18c\ube4c\ubbf8\ub85c \uc7a1\ub294\uac70\ub294 \uc804\ub7b5\uc774\ub77c \uc0dd\uac01\ud560 \uc218 \uc788\uc74c. \uc560\ucd08\uc5d0 \uc9d1\ub2e8\ud1f4\uc18c\ub8f0\uc744 \uc65c \uacfc\ubc18\uc218\ub85c \ud588\ub294\uc9c0 \ub0a9\ub4dd\uc774\uc548\uac10. \ucd5c\uc18c 3\ubd84\uc7582\ub294 \ub118\uc5c8\uc5b4\uc57c \ud588\uc74c. \uc5b4\uca0c\ub4e0 \uc81c\uc791\uc9c4\uc774 \ud5c8\uc220\ud558\uac8c \uc815\ud55c \ub8f0\uc744 \uac8c\uc774\uba38\uac00 \uc774\uc6a9\ud55c\uac70\ub294 \ud06c\uac8c \uc695\uba39\uc744\ubd80\ubd84\uc740 \uc544\ub2c8\ub77c\uace0\uc0dd\uac01\ud568.<br />\uc0ac\uc2e4 \uc81c\uc791\uc9c4\uc740 8\uc77c\ub8f0\ub85c \uc0ac\ub78c\ub4e4 \uc9c0\uc625\uc73c\ub85c \ubc00\uc5b4\ub123\uace0 \ubb3c\uace0 \ub72f\uace0 \ud560 \uc601\uc0c1\uc744 \uc6d0\ud588\ub294\ub370 \uac8c\uc784 \uc885\ub8cc\ub420 \uac83\uac19\uc73c\ub2c8\uae4c \uc81c\uc791\uc9c4\ub3c4 \u3148\ub428\uc744 \uac10\uc9c0\ud558\uace0 \ubd80\ub7b4\ubd80\ub7b4 \uc124\ub4dd\ud55c\uac70\uc9c0."
+        ]
+      },
+      "UCYPOkqUxUaLZfVMWx8YNmTA": {
+        "nickname": [
+          "\uc815\ucca0"
+        ],
+        "predict": [
+          "0.9964418"
+        ],
+        "comment": [
+          "<a href=\"https://www.youtube.com/watch?v=r0mgs7YoeCc&amp;t=6m52s\">6:52</a> \ub2c8\uac00 \uc65c??"
+        ]
+      },
+      "UC9WxKcYw_1XRuO_UlVZGNwQ": {
+        "nickname": [
+          "\ubb38\ucd98\uc2dd"
+        ],
+        "predict": [
+          "0.8663127"
+        ],
+        "comment": [
+          "\ud601\uc900\uc0c1 \uc81c\ubc1c \ubc1c\uacac\ud574\uc918!!!"
+        ]
+      },
+      "UC3QUfT3nThPVqXTWYj89FuA": {
+        "nickname": [
+          "\uc7ac\ud604"
+        ],
+        "predict": [
+          "0.9976974"
+        ],
+        "comment": [
+          "<a href=\"https://www.youtube.com/watch?v=r0mgs7YoeCc&amp;t=11m07s\">11:07</a> \ub2c8\uac00 \ubb54\ub370 \uac16\uace0 \uc788\uc5b4 \u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b"
+        ]
+      },
+      "UCS-nRybnzxxgzVTimCPk63A": {
+        "nickname": [
+          "COLE"
+        ],
+        "predict": [
+          "0.99597025"
+        ],
+        "comment": [
+          "\uba38\ub2c8\uac8c\uc784\uc2dc\uc98c 2\uc5d0  \uc18c\uc2a4\uc90c   -   \uc2e0\uc6a9\uce74\ub4dc \uc5f0\uccb4 5\uc77c\ucc28\uc774\uc0c1 , \uae30\ud0c0 \uae08\uc735\uac70\ub798 \uc81c\uc7ac\uc790 , \uc0ac\uae30\uc804\uacfc\ub9cc \uc788\ub294 \uc0ac\ub78c , \uc9d5\uc9d5\ub300\ub294 \uc560\uc0c8\ub07c\ub4e4\ub9d0\uace0 \ub2a5\uad6c\ub801\uc774\uac19\uc740 4-60\ub300 \ub85c \uc2dc\uc98c2\ud558\uba74 \ucd08\ub300\ubc15\ub0a8"
+        ]
+      },
+      "UCXNOvrK71_3Jt0b3WEDOU6A": {
+        "nickname": [
+          "\ube44\ub204\uac70\ud488\ubc84\ube14\ubc84\ube14"
+        ],
+        "predict": [
+          "0.99624264"
+        ],
+        "comment": [
+          "\uc544\ub2c8\u314b\u314b\u314b \ubc16\uc5d0\uc11c \ud734\uc2dd\ucde8\ud558\uace0 \uc624\ub354\ub2c8 \ub2e4\ub4e4 \ubf40\uc0e4\uc2dc\ud574\uc9c4\uac70 \uac1c\uc6c3\uae30\ub124 \u314b\u314b\u314b\u314b"
+        ]
+      },
+      "UCP__GIwBIXZFjXuVwn3yrOA": {
+        "nickname": [
+          "\uc6a9\uc774\uba38\ub2c8"
+        ],
+        "predict": [
+          "0.98231643"
+        ],
+        "comment": [
+          "\u314b\u314b\u314b\uc9d1\ub2e8\ud1f4\uc18c\ud558\uace0 \uc790\uae30\ub4e4 \uba4b\ub300\ub85c \ud560\uaebc\uba74 \ubc29\uc1a1\uc744 \uc65c \ud568<br />\uc7ac\ubbf8\uc5c6\uac8c\ud558\ub124"
+        ]
+      },
+      "UCMmDvZ0wehW18dYAo0bWEFA": {
+        "nickname": [
+          "\uc774\u1112"
+        ],
+        "predict": [
+          "0.9972433"
+        ],
+        "comment": [
+          "\ub300\ubd80\ubd84 \uc720\ud29c\ubc84 \uad6c\ub3c5\uc790 10\ub9cc \uc774\uc0c1\uc5d0 \uc548\uc815\uc801\uc778 \uc218\uc785\uc6d0\uc744 \uc950\uace0 \uc788\ub294\ub370 \uc774\ub7f0 \uc0ac\ub78c\ub4e4\ub9cc \ucd9c\uc5f0\ud558\ub2c8 \ub3c8\uc5d0 \ub300\ud55c \uac04\uc808\ud568\uc774 \uc5c6\uc5b4\uc11c \uc774\ub807\uac8c \uc9d1\ub2e8\uc73c\ub85c \ud1f4\uac70\ud55c\ub2e4\ub294 \uc18c\ub9ac\uac00 \ub098\uc624\ub294\ub4ef"
+        ]
+      },
+      "UCqHwMx-pYceyVya6nhVaLDA": {
+        "nickname": [
+          "\u110b\u110b"
+        ],
+        "predict": [
+          "0.99738723"
+        ],
+        "comment": [
+          "\ub300\uccb4 \uc774\uc5b4\ud3f0\uc740 \uc65c\uc790\ub978\uac70\uc57c \uc5b4\ub5a4 \u3142\u3145\ub300\uac00\ub9ac\uc5d0\uc11c \ub098\uc628\uac70\ub0d0? \uc65c \ub9dd\uce58\uc0ac\uc11c \ub3c8\ub4e4\uace0 \ud280\uc9c0\uadf8\ub798 \uc528\ubc1c \u314b\u314b\u314b\u314b"
+        ]
+      },
+      "UCda9qBoNXnB4TJxF6Cwmahw": {
+        "nickname": [
+          "Simson Jack"
+        ],
+        "predict": [
+          "0.95930266"
+        ],
+        "comment": [
+          "\uadf8\ub0e5 \uc774\ubc88\ud654\ub294 \uc9d1\ub2e8\ud1f4\uc18c \ube4c\ubbf8\ub85c \uc57d\uc810\uc7a1\uace0 \uc950\uace0 \ud754\ub4dc\ub294\uac70\ub85c \ubc16\uc5d0 \uc548\ubcf4\uc774\ub294\ub370?<br /><br />\uc5b4\ucc28\ud53c \uc801\ub300\uc778\ub370 \uacf5\uc774 6\ubc88\ud55c\ud14c \ub2f4\ubc30 \ubc18\ub0a9\ud558\ub294\uac8c \ub9d0\uc774\ub418\ub098 \uc774\uac8c\u314b\u314b\u314b"
+        ]
+      },
+      "UChayMuScD2jmysE0gAUe7LQ": {
+        "nickname": [
+          "\uc0ac\ucfe0\ub780\ubcf4\uc5d0\uc911\ub3c5\ub3fc\ubc84\ub9b0\ub9c8\ub8e8\uc250"
+        ],
+        "predict": [
+          "0.9968984"
+        ],
+        "comment": [
+          "\uc9d1\ub2e8 \ud1f4\uc18c \ud3b8\uc9d1\ubcf8 \uc62c\ub824\uc8fc\uc138\uc694.<br /><br />\uadf8\ub9ac\uace0 \uc81c\uc791\uc9c4\uc774 \uac1c\uc785\ud55c \uc774\uc0c1 \uba38\ub2c8\uac8c\uc784\uc740 5\ud654\uc5d0\uc11c \ub05d\ub0ac\ub2e4\uace0 \uc0dd\uac01\ud558\uaca0\uc2b5\ub2c8\ub2e4."
+        ]
+      },
+      "UCpjf5TjEF9VhmBNsQNQMUYw": {
+        "nickname": [
+          "pong 1357"
+        ],
+        "predict": [
+          "0.99492705"
+        ],
+        "comment": [
+          "\uadfc\ub370 \ub0a8\ub140 \ud3b8\uac00\ub974\ub294\uac8c \uc544\ub2c8\ub77c \ub0a8\uc790\ub294 \uc774\uc131\uc801\uc774\uace0 \uc5ec\uc790\ub294 \uac10\uc131\uc801\uc778\uac8c \ub9de\ub294\uac70 \uac19\ub2e4 \uc5ec\uc790 \uc804\uc6d0\ud1f4\uc18c\ud574\uc11c \uac9c \ub05d\ub0c7\ub294\ub370 \ub2e4\uc2dc \uc5ec\ucc28\uc800\ucc28 \ud574\uc11c \uc628\uac70 \ubcf4\uba74 \ub3c8\ub3c4 \uc911\uc694\ud558\uace0 \uac10\uc815\ub3c4 \uc911\uc694\ud55c\ub370 \uc0ac\uc2e4\uc0c1 \ubc29\uc1a1\uc774 \ubc30\uacbd\uc778\ub370 \uac10\uc131\uc801\uc73c\ub85c \ub2e4 \ud1f4\uc18c\ud558\ub294\uac74 \uc880 \uc544\ub2c8\uc9c0 \uc54a\ub098 \uc2f6\uc74c"
+        ]
+      },
+      "UCd5NyII8uIxnijnML8Q9LQQ": {
+        "nickname": [
+          "Noocar Racoon"
+        ],
+        "predict": [
+          "0.94183046"
+        ],
+        "comment": [
+          "\ubc29\uc1a1 \ucc38\uac00\uc790\ub4e4 \uc0c1\ud669 \ubcf4\ub2e4 \ub313\uae00\uc774 \ub354\ud55c \uac83 \uac19\ub2e4.<br />\uc815\uc791 \uc11c\ub85c \uac10\uc815 \ud06c\uac8c \uc0c1\ud55c \ub2f9\uc0ac\uc790\ub4e4\uc778 \ucc38\uac00\uc790\ub07c\ub9ac\ub3c4 \uac8c\uc784 \ud6c4\uc5d0 \uc0b4\uc778 \uc548 \ub098\uace0 \uadf8\ub0e5\uc800\ub0e5 \ubb34\uc2dc\ud558\ub4e0 \ubb50\ud558\ub4e0 \uac01\uc790 \uc0b4\uace0 \uc788\ub294\ub370<br />\uc544\ubb34\ub9ac \ubab0\uc785\ub825\uc774 \ub192\uc740 \ucf58\ud150\uce20\ub77c\ub3c4 \uac04\uc811\uc801\uc73c\ub85c \uc2dc\uccad\ud588\uc744 \ubfd0\uc778 \uc2dc\uccad\uc790\ub4e4\uc774 \uc8fd\uc774\uace0 \uc2f6\uc5b4\ud558\uace0 DM\uc73c\ub85c \ub313\uae00\ub85c \ud3ed\uc5b8\ud558\ub294 \uc0c1\ud669\uc774 \ub354 \uc9c0\uc625\uac19\ub2e4<br />\uc695\ub3c4 \ub204\uac00 \ubb38\uc81c\uace0 \uc798\ubabb\ud588\uace0 \uc218\uc900\uc774 \uc544\ub2cc \uc2ec\uac01\ud55c \uc778\uc2e0\uacf5\uaca9\uacfc \uc77c\ubc18\ud654<br />\ub0a8\uc774 \ubd10\ub3c4 \ub208\uc300 \ucc0c\ud478\ub824\uc9c0\uace0 \uc0c1\ucc98\uac00 \ub418\uace0 \ub2f9\uc0ac\uc790\uac00 \ubcf4\uba74 \uadf9\ub2e8\uc801 \uc120\ud0dd\ud560 \uc218\ub3c4 \uc788\uc744\ub9cc\ud55c \uc815\ub3c4<br /><br />\uc815\uce58\uc9c8 \uc5ec\ub7ec\ubc88 \uc528\uac8c \ub2f9\ud574\ubcf8 \uc785\uc7a5\uc73c\ub85c\uc11c \uadf8 \uc0c1\ub300\uc5d0 \ub300\ud574 \ubd84\ub178\uac00 \uc5bc\ub9c8\ub098 \ucee4\uc9c0\ub294 \uc9c0 \ucda9\ubd84\ud788 \uacaa\uc5b4\ubd24\ub2e4 <br />\uadf8\ub807\uc9c0\ub9cc \uc800\ub807\uac8c\uae4c\uc9c0 \ucc3e\uc544\uac00\uc11c \uc8fd\uc73c\ub77c\uace0 \ud558\uac70\ub098 \uc8fd\uc774\ub824\uace0 \uc2dc\ub3c4\ud558\uc9c0\ub294 \uc54a\uc558\ub294\ub370<br />\uadf8\ub7f0 \uc0ac\ub78c\ub4e4\uc5d0\uac8c \ucc38\uac00\uc790\ub4e4\uc758 \uc815\uc2e0\uac74\uac15\uc744 \uc0dd\uac01\ud574\uc11c \uc870\uc2ec\ud558\uc790\uace0 \ub9d0\ud574\ub3c4 \uc18c\uc6a9 \uc5c6\uc744\ud14c\ub2c8<br />\uc801\uc5b4\ub3c4 \uc790\uae30 \uc790\uc2e0\uc744 \uc704\ud574 \ucd5c\uc18c\ud55c\uc758 \uc778\uac04\ub2e4\uc6c0\uc744 \uc9c0\ud0a4\uae30 \uc704\ud574 \ud55c\ubc88\ub9cc \ub354 \uc0dd\uac01\ud558\uace0 \uc190\uac00\ub77d \ub180\ub838\uc73c\uba74 \uc88b\uaca0\ub2e4."
+        ]
+      },
+      "UCDEFkz14gy1ixn8HsLu5g4A": {
+        "nickname": [
+          "dd d"
+        ],
+        "predict": [
+          "0.9881783"
+        ],
+        "comment": [
+          "\uc800\ub7f0 \uc138\uc0c1\uac01\uc9c0\uc5d0\uc11c \ubaa8\uc778 \uc0ac\ub78c\ub4e4\ud558\uace0 2\ub144\ub3d9\uc548 \uac19\uc774\uc788\uc5b4\uc57c\ud558\ub294\uac8c \uad70\ub300\ub2e4 \uad70\ub300\ub294 \ud1f4\uc18c\ub3c4 \ubabb\ud574 \u3145\ubc1c\uac83"
+        ]
+      },
+      "UCeW3fFFAU3tpjg5VQ4csylg": {
+        "nickname": [
+          "\uc740\uac00\ub204"
+        ],
+        "predict": [
+          "0.99762446"
+        ],
+        "comment": [
+          "6\ubc88 \ud654\ub048\ud558\uace0 \ucfe8\ud558\uace0 \ub611\ub611\ud55c\uc904 \uc54c\uc9c0\ub9cc \ud604\uc2e4\uc5d0\uc120 \uac00\uc7a5 \ub4a4\uc5d0\uc11c \uc695\ucc98\uba39\ub294 \uc2a4\ud0c0\uc77c. \ud2b9\ud788 \ub0a8\uc790\ub4e4\uc774 \uc800\ub7f0 \uc384\ubcf4\uc774\ub294 \uc5ec\uc790 \uc9c4\uc9dc \uc2eb\uc5b4\ud568"
+        ]
+      },
+      "UC2oPNi25jff8UJkqPML5szg": {
+        "nickname": [
+          "\uc694\uc815"
+        ],
+        "predict": [
+          "0.99672455"
+        ],
+        "comment": [
+          "\uc384\uc9c0\ub3c4\uc54a\uc740\ub370 \uc388\ucc99\ud558\ub294\uac8c \uae30\uac00 \ucc28\uc11c \uc2eb\uc5b4\ud558\ub294\uac70 \ud329\ud2b8"
+        ]
+      },
+      "UCF-hj5AY5jfbsCM2qCk4opQ": {
+        "nickname": [
+          "chrip song"
+        ],
+        "predict": [
+          "0.99704725"
+        ],
+        "comment": [
+          "\uc0b0\ubc94 \uc720\ud29c\ube0c \uc7a0\uae50 \uc5c6\uc5b4\uc84c\ub358\uac8c \uc5ec\uc790\ub4e4 \ubc30\uc2e0\ud574\uc11c \uc5c6\uc5b4\uc84c\ub358\uac70\uad6c\ub098"
+        ]
+      },
+      "UCGMGRQoK6-zdT7LE9zvcLkg": {
+        "nickname": [
+          "\ud64d\uc6d0\ud45c"
+        ],
+        "predict": [
+          "0.9973374"
+        ],
+        "comment": [
+          "<a href=\"https://www.youtube.com/watch?v=r0mgs7YoeCc&amp;t=34m42s\">34:42</a> &quot;\uc6b0\ub9ac 3\uac1c \ub0a8\uae30\uace0 \ub2e4 \uc790\ub974\uc790. \uc5b4\ucc28\ud53c \uc6b0\ub9ac\uac00 \uc790\ub978\uc9c0 \uc54c \uc218\uac00 \uc5c6\uc796\uc544&quot;<br />\uc65c \uc54c \uc218\uac00 \uc5c6\uc5b4\u314b\u314b\u314b\u314b"
+        ]
+      },
+      "UCYQK8gQCfUW_5qCLeCZXmpg": {
+        "nickname": [
+          "\ub3c4\ub974\ub974"
+        ],
+        "predict": [
+          "0.99750215"
+        ],
+        "comment": [
+          "\uc544\uc624... \uc5ec\uc790 \ucabd \ud55c \uba85 \ub9d0\ud22c \uc9c4\uc9dc \uc664\ucf00 \ub760\uaebc\uc6c0\u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b \uac10\uc2a4\ud2b8\ub77c\ub2e4\ubb34\uc2a4\uac00\uac00 \uadf8 \ubd84\ud55c\ud14c \ud3c9\uc18c \uc778\uc131\ub300\ub85c \ud589\ub3d9\ud558\uc9c0 \ub9d0\ub77c\ub294 \uc774\uc720\uac00 \ub2e4 \ub098\uc628\ub2e4... \uc9c4\uc9dc \uc774\uc131\uc801\uc73c\ub85c \ud310\ub2e8\ubabb\ud558\uace0 \uc778\uc131\uc774 \ub35c \ub41c \uac8c \ub531 \ubcf4\uc784..."
+        ]
+      },
+      "UCZQPh_2LDFd5reH8JSLCfEg": {
+        "nickname": [
+          "\ub9b4\ucfe0\uae30\uc758\uc81c\uc790"
+        ],
+        "predict": [
+          "0.99463505"
+        ],
+        "comment": [
+          "<a href=\"https://www.youtube.com/watch?v=r0mgs7YoeCc&amp;t=38m53s\">38:53</a> \uc9c4\uc9dc \uacf5\ud601\uc900 \ub4b7\ubaa8\uc2b5 \uc878\ub77c \uadc0\uc5fd\ub124 \u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b"
+        ]
+      },
+      "UCZbeq9wFX2RreBhCAdyR8TA": {
+        "nickname": [
+          "\u0414\u043c\u0438\u0442\u0440\u0438\u0439a \u0414\u043e\u043d\u0441\u043a\u043e \u0414\u043c\u0438\u0442\u0440\u0438\u0439"
+        ],
+        "predict": [
+          "0.9974268"
+        ],
+        "comment": [
+          "6\ubc88 \uc785\uc5d0 \uc695\uc744 \uc544\uc8fc \ub2ec\uace0\uc0ac\ub294\uad6c\ub098 \ud3c9\uc18c\ud589\uc2e4\uc774..\ubcf4\uc778\ub2e4 \ubcf4\uc5ec"
+        ]
+      },
+      "UCB6yWjMC5YihQs7tjEjwE8w": {
+        "nickname": [
+          "\uc804\ub098\ub728\uac81\ub124"
+        ],
+        "predict": [
+          "0.91866744"
+        ],
+        "comment": [
+          "\uc5ed\uc2dc \uacf5\ud601\uc900 \u314b\u314b\u314b \ub2f4\ubc30 \uc81c\ucd9c\ud558\ub77c\ub2c8\uae4c \uc2e0\ubb38\uc9c0\ubc11\uc5d0 \uaf41\uac00\ub193\uae30 \u314b\u314b\u314b\uad6d\ub8f0"
+        ]
+      },
+      "UCEvBvXkRZHazlv4p4TZ9VJg": {
+        "nickname": [
+          "\ub354\uc6d0\uccb4\uc778\uc9c0"
+        ],
+        "predict": [
+          "0.98280406"
+        ],
+        "comment": [
+          "4\ubc88\uc804\uae30\uac00 \uc804\uc790\uacf5\ud559\uacfc \ub098\uc640\uc11c \ub2c9\ub124\uc784\uc774 \uc804\uae30\uc796\uc544?<br />\uc804\uae30\uac00 \uc0c1\ud669 \ub208\uce58\uae4c\uace0 \uc778\ud130\ud3f0 \ubbf8\ub9ac \uc8fc\ubb38\ud574\uc11c \uc7ac\uc124\uce58 \ud55c\ud6c4\uc5d0 \ub2e4 \uc5ff\uba39\uc774\uace0 \uc6c3\uc73c\uba74\uc11c \ub098\uc624\uba74 \ub808\uc804\ub4dc\u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b\u314b"
+        ]
+      },
+      "UCdkcQUxug4Vfel2M3AxQ9tw": {
+        "nickname": [
+          "\ud68c\uc790"
+        ],
+        "predict": [
+          "0.9190822"
+        ],
+        "comment": [
+          "<a href=\"https://www.youtube.com/watch?v=r0mgs7YoeCc&amp;t=23m14s\">23:14</a> \uc774\ub54c\ubd80\ud130 \uc2dc\uc791\ub41c \uc0ac\ub791"
+        ]
+      },
+      "UC3ND9kUuzHEBam6Mwlz4elQ": {
+        "nickname": [
+          "lemce lsm"
+        ],
+        "predict": [
+          "0.97012895"
+        ],
+        "comment": [
+          "\uc544 \uc774\ub798\uc11c \uc0b0\ubc94\uc774\ub791 \uacf5\ud601\uc900\uc774 \uc0ac\uadc0\uae30 \uc2dc\uc791\ud588\ub098\ubcf4\ub2e4  \uccab\ub9cc\ub0a8"
+        ]
+      },
+      "UCXHhDbCFxL00Xgv-HalqOYw": {
+        "nickname": [
+          "\uc774\uac00\ub531\ub531"
+        ],
+        "predict": [
+          "0.9973802"
+        ],
+        "comment": [
+          "\uac1c\uc18c\ub9ac \u3134\u3134 \uc800\uac70 \ucc0d\uae30\uc804\uc5d0\ub3c4 \uc0ac\uadc0\uace0\uc788\uc5c8\uc74c"
+        ]
+      },
+      "UC0EtZPXWoGkAhT5VPdTMBkQ": {
+        "nickname": [
+          "ra s"
+        ],
+        "predict": [
+          "0.99775726"
+        ],
+        "comment": [
+          "\uc120 \uc790\ub974\ub124 \uc2dc\ubc1c \u314b\u314b"
+        ]
+      },
+      "UCQw0eIk8KJLDvsu9z9eC5KQ": {
+        "nickname": [
+          "TueLove _D"
+        ],
+        "predict": [
+          "0.99689853"
+        ],
+        "comment": [
+          "\ub17c\ub9ac\uc655 \uc804\uae30  \uadf8\ub294 \uc774 \uc218\uc5d0\uc11c \ubb34\uc2a8 \uc218 \uc744 \ub458 \uac83\uc778\uac00"
+        ]
+      },
+      "UCmoMzqR5FEsJYKBrALFMvfw": {
+        "nickname": [
+          "\ud558\uc5f0\uc2dc\uc9d1\ubcf4\ub0b4\uae30"
+        ],
+        "predict": [
+          "0.9872177"
+        ],
+        "comment": [
+          "\uadf8\uc131\ubcc4 2\ubc88\ud55c\ud14c \uc774\uac04\uc9c8\ud558\uba74\uc11c \uc6b0\ub9ac\ud3b8 \ud574\ub77c \uc544\ub2c8\uba74 \uc801\uc774\ub2e4  \ub0a8\uc790 \uc774\uc131\uc801\uc73c\ub85c \uc5ec\ub7ec\uac00\uc9c0 \uc81c\uc548  \uc81c\uc2dc\ud6c4 \ub2c8 \uc120\ud0dd \ud574\ub77c \u314b\u314b\u314b\u314b\uc774\uac83\ubd80\ud130 \ub2ec\ub974\ub2e4 \uc640 \uc18c\ub984 \ub3cb\ub294\ub2e4"
+        ]
+      },
+      "UCWjv_yI27ETLZZHxk9xoHkw": {
+        "nickname": [
+          "\uae40\uc900\ud615"
+        ],
+        "predict": [
+          "0.99734724"
+        ],
+        "comment": [
+          "<a href=\"https://www.youtube.com/watch?v=r0mgs7YoeCc&amp;t=25m00s\">25:00</a> \uadf8\uac74 \uc544\ub2cc\ub4ef ..."
+        ]
+      },
+      "UC-OzkKUWRI9kaMj9DrkdOUA": {
+        "nickname": [
+          "\uc6b0\ub77d"
+        ],
+        "predict": [
+          "0.9843278"
+        ],
+        "comment": [
+          "&quot; <b>\ud53c\ud574\uc790\uba74 \ub2e5\uce58\uace0 \uacc4\uc138\uc694</b> &quot;"
+        ]
+      },
+      "UC6KSrxhQWcSwc3ux8vzdEBQ": {
+        "nickname": [
+          "\ubd80\uc601\uc120"
+        ],
+        "predict": [
+          "0.99690324"
+        ],
+        "comment": [
+          "\uc751~\ud53c\ud574\uc790\ub294 \ub2e5\uccd0"
+        ]
+      },
+      "UCPxCmV4OEqMSv17pvHd6O9Q": {
+        "nickname": [
+          "\ub313\uae00"
+        ],
+        "predict": [
+          "0.9542984"
+        ],
+        "comment": [
+          "\uac00\uc624\uac00\uc774 \u3148\ub124 \uc6c3\uae30\ub124"
+        ]
+      },
+      "UCkDUv2tiH76OFlduFlVN5kw": {
+        "nickname": [
+          "\ud638\ub0a0\ub450"
+        ],
+        "predict": [
+          "0.9949824"
+        ],
+        "comment": [
+          "<a href=\"https://www.youtube.com/watch?v=r0mgs7YoeCc&amp;t=11m35s\">11:35</a>  JONNA NO JAM"
+        ]
+      },
+      "UChnZ_bZmIk-4Qd7uuJa4pmA": {
+        "nickname": [
+          "Harang"
+        ],
+        "predict": [
+          "0.99602735"
+        ],
+        "comment": [
+          "<a href=\"https://www.youtube.com/watch?v=r0mgs7YoeCc&amp;t=4m55s\">4:55</a> \uc774\uac70\uc644\uc804 \uad70\ub300 \uc598\uae30\uac19\ub2e4"
+        ]
+      },
+      "UCePav8czCZna9eP7IrwO07g": {
+        "nickname": [
+          "vai ngon"
+        ],
+        "predict": [
+          "0.8347539"
+        ],
+        "comment": [
+          "\uacb0\uad6d \uac10\uc815\uc5d0 \ud729\uc4f8\ub824\uc11c 4\uc778\ud1f4\uc18c \ud588\uad6c\ub098\u314b\u314b<br />\ucc38 \uac00\uad00\uc774\ub2e4"
+        ]
+      },
+      "UCmSSOAQ7fJn5z6KsylCw1Fg": {
+        "nickname": [
+          "\uc870\ucf00\uc774\ub4dc"
+        ],
+        "predict": [
+          "0.99378777"
+        ],
+        "comment": [
+          "<a href=\"https://www.youtube.com/watch?v=r0mgs7YoeCc&amp;t=1m45s\">1:45</a> \uc2dc\uc791"
+        ]
+      },
+      "UC9HYs-EG-tXxZbsgMi6TzEw": {
+        "nickname": [
+          "\ubd87\uc639\uc0b0TV"
+        ],
+        "predict": [
+          "0.8103937"
+        ],
+        "comment": [
+          "\uac00\uc988\uc544"
+        ]
+      },
+      "UCsTsdzX13wgB2enWLzq8ewg": {
+        "nickname": [
+          "\ubc15\uc2e0\ud601"
+        ],
+        "predict": [
+          "0.9974623"
+        ],
+        "comment": [
+          "\uc6b0\ub9ac \uc9d1 \uac1c\uac00 \uc9d6\ub294\ub2e4."
+        ]
+      },
+      "UCcTHaISg_g-2sQ6kbd5pdgw": {
+        "nickname": [
+          "\uc7ac\uc6d0"
+        ],
+        "predict": [
+          "0.8103937"
+        ],
+        "comment": [
+          "\uac00\uc988\uc544"
+        ]
+      }
+    }
+  }
+}
