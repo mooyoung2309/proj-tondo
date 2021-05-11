@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import { Row, Col  } from 'antd';
+import { Typography, Statistic, Row, Col  } from 'antd';
+import { Liquid } from '@ant-design/charts';
 import DragList from './Sections/DragList';
 import VerticalList from './Sections/VerticalList';
-import Chart from './Sections/Chart';
-import Info from './Sections/Info';
 
 var jsonTest = require('../../../data/test.json');
 
+const { Title } = Typography;
 const axios = require('axios');
 
 function SearchPage(props) {
@@ -49,24 +49,41 @@ function SearchPage(props) {
             });
     }, [])
 
-
+    var config = {
+        width: 200,
+        height: 200,
+        percent: info.num_of_bad_comments / info.num_of_comments,
+        outline: {
+          border: 4,
+          distance: 8,
+          style: {
+              stroke: "#F21170"
+          }
+        },
+        wave: { length: 128 },
+        liquidStyle: {
+            fill : "#F21170"
+        } 
+    
+      };
+      // <Liquid {...config} />
+   
     if(channelId !== "") {
-        console.log(badComments);
         return (
             <>
-                <Row>
-                    <Col span={6} offset={6}>
-                        <Chart info={ info }/>
-                    </Col>
-                    <Col span={6}>
-                        <Info info={ info }/>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col span={12} offset={6}>
-                        <VerticalList badComments={ badComments }/>
-                    </Col>
-                </Row>
+                <div style={{ display: 'flex', marginTop: '4rem'}}>
+                    <div style={{ width: '50%' }}>
+                        <Liquid {...config} />
+                    </div>
+                    <div style={{ width: '50%' }}>
+                        <Statistic title="악성 댓글 / 전체 댓글" value={info.num_of_bad_comments + ' / ' + info.num_of_comments} />
+                        <Statistic style={{ marginTop: '1rem'}} title="업데이트된 시간" value={info.updated_time} />
+                    </div>
+                </div>
+                <div style={{ marginTop: '6rem'}}>
+                    {/* <DragList BadComments={badComments}></DragList> */}
+                    <VerticalList />
+                </div>
             </>
         )
     } else {

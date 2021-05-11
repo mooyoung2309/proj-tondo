@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { Comment } = require("../models/Comment");
 const spawn = require('child_process').spawn;
-const fs = require('fs');
+// const fs = require('fs');
 
 
 //=================================
@@ -10,6 +10,7 @@ const fs = require('fs');
 //=================================
 
 
+// take comments mongoDB
 router.post('/analyzeComment', (req, res) => {
     Comment.findOne({ channelId: req.body.id })
         .exec((err, comments) => {
@@ -19,11 +20,14 @@ router.post('/analyzeComment', (req, res) => {
 
 });
 
+// run python create comments -> save comments mongoDB
 router.post('/createComment', (req, res) => {
-    console.log(req.body.id);
+    // console.log(req.body.id);
     const pythonProcess = spawn('python', ['test/predict_by_url.py', String(req.body.id)]);
     // const pythonProcess = spawn('python', ['test/test.py']);
+
     var result = '';
+
     pythonProcess.stdout.on('data', function(data) { 
         result += data.toString();
     });
@@ -34,11 +38,11 @@ router.post('/createComment', (req, res) => {
 
         // fs.writeFileSync("target.txt", '\ufeff' + result, {encoding: 'utf8'});
         // JSON.parser
-        console.log("JSON.parse-----------------------------------------------")
+        // console.log("JSON.parse-----------------------------------------------")
         var jsonParseResult = JSON.parse(result)
-        console.log(jsonParseResult)
-        console.log(jsonParseResult[req.body.id]['info'])
-        console.log(typeof(result))
+        // console.log(jsonParseResult)
+        // console.log(jsonParseResult[req.body.id]['info'])
+        // console.log(typeof(result))
 
         const comment = new Comment({    
                 channelId: req.body.id,
@@ -61,28 +65,6 @@ router.post('/createComment', (req, res) => {
 
     pythonProcess.stderr.on('data', function(data) { console.log(data.toString()); });
 
-
-});
-
-router.post('/testPush', (req, res) => {
-    const comment = new Comment({    
-        channelId: "test",
-        badComments: ["comment1", "comment2"]
-
-        })
-    comment.save((err, doc) => {
-        if(err) {
-            return res.json({ success: false, err });
-        } else {
-            console.log("save성공");
-            return res.status(200).json({
-                success: true
-            });
-        
-        } 
-            
-    })
-    console.log("안녕");
 });
 
 
