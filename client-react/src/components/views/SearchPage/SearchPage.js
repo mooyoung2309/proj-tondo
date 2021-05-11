@@ -9,48 +9,49 @@ const { Title } = Typography;
 const axios = require('axios');
 
 function SearchPage(props) {
-    const youtubeUrl = props.location.state.youtubeUrl
+    const youtubeUrl = props.location.state.youtubeUrl;
+    const youtubeId = youtubeUrl.substring(youtubeUrl.indexOf('=') + 1, youtubeUrl.indexOf('&'));
     
-    const [YoutubeId, setYoutubeId] = useState("")
-    const [BadComments, setBadComments] = useState({})
-    const [Info, setInfo] = useState({})
+    const [channelId, setChannelId] = useState("");
+    const [badComments, setBadComments] = useState({});
+    const [info, setInfo] = useState({})
     
     useEffect(() => {
-        // url 체크
-        const urlData = {
-            url: youtubeUrl,
+        // url -> id
+        const idData = {
+            id: youtubeId,
         }
 
-        axios.post('/api/comments/analyzeComment', urlData)
+        axios.post('/api/comments/analyzeComment', idData)
             .then((response) => {
-                if(response.data) {
-                    console.log("not data");
-                    axios.post('/api/comments/createComment', urlData)
+                if(response.data.comments != null) {
+                    setChannelId(response.data.comments.channelId);
+                    setInfo(response.data.comments.info);
+                    setBadComments(response.data.comments.badComments);
+                    
+                } else {
+                    // comments 생성
+                    axios.post('/api/comments/createComment', idData)
                         .then((response) => {
                             console.log(response)
+                            setChannelId(response.data.comments.channelId);
+                            setInfo(response.data.comments.info);
+                            setBadComments(response.data.comments.badComments);
                         })
                         .catch((err) => {
                             console.log(err);
                         });
-                } else {
-                    console.log("hav data");
                 }
             })
             .catch((err) => {
                 console.log(err);
             });
-        
-        var keyTest = Object.keys(jsonTest)[0]
-        setYoutubeId(keyTest)
-        setBadComments(jsonTest[keyTest]["bad_comment"])
-        setInfo(jsonTest[keyTest]["info"])
-        
     }, [])
 
     var config = {
         width: 200,
         height: 200,
-        percent: Info.num_of_bad_comments / Info.num_of_comments,
+        percent: info.num_of_bad_comments / info.num_of_comments,
         outline: {
           border: 4,
           distance: 8,
@@ -66,8 +67,7 @@ function SearchPage(props) {
       };
       // <Liquid {...config} />
    
-    if(Object.keys(BadComments).length != 0) {
-        //console.log(BadComments)
+    if(channelId !== "") {
         return (
             <>
                 <div style={{ display: 'flex', marginTop: '4rem'}}>
@@ -75,12 +75,12 @@ function SearchPage(props) {
                         <Liquid {...config} />
                     </div>
                     <div style={{ width: '50%' }}>
-                        <Statistic title="악성 댓글 / 전체 댓글" value={Info.num_of_bad_comments + ' / ' + Info.num_of_comments} />
-                        <Statistic style={{ marginTop: '1rem'}} title="업데이트된 시간" value={Info.updated_time} />
+                        <Statistic title="악성 댓글 / 전체 댓글" value={info.num_of_bad_comments + ' / ' + info.num_of_comments} />
+                        <Statistic style={{ marginTop: '1rem'}} title="업데이트된 시간" value={info.updated_time} />
                     </div>
                 </div>
                 <div style={{ marginTop: '6rem'}}>
-                    <DragList BadComments={BadComments}></DragList>
+                    <DragList BadComments={badComments}></DragList>
                 </div>
             </>
         )

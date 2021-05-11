@@ -6,9 +6,8 @@ const commentSchema = mongoose.Schema({
         type: String,
         maxlength:50,
     },
-    badComments: [
-        
-    ]
+    info: { },
+    badComments: { },
 })
 
 const Comment = mongoose.model('Comment', commentSchema);

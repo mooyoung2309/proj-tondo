@@ -52,7 +52,7 @@ const onDragEnd = (result, columns, setColumns) => {
 };
 
 function DragList(props) {
-
+  //console.log(props.BadComments);
   const [columns, setColumns] = useState({});
   const [BadComments, setBadComments] = useState({})
   const [channels, setChannels] = useState({

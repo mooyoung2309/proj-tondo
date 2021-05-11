@@ -69,5 +69,5 @@ def get_predict(video_id):
 
 
 if __name__ == '__main__':
-    sys.argv[1] = sys.argv[1].split('=')[1][:11]
+    # sys.argv[1] = sys.argv[1].split('=')[1][:11]
     get_predict(sys.argv[1])

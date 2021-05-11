@@ -11,17 +11,17 @@ const fs = require('fs');
 
 
 router.post('/analyzeComment', (req, res) => {
-    Comment.findOne({ "url": req.body.url })
-        .exec((err, comment) => {
+    Comment.findOne({ channelId: req.body.id })
+        .exec((err, comments) => {
             if(err) return res.status(400).send(err)
-            return res.status(200).json({ success: true, comment })
+            return res.status(200).json({ comments })
         })
 
 });
 
 router.post('/createComment', (req, res) => {
-    console.log(req.body.url);
-    const pythonProcess = spawn('python', ['test/predict_by_url.py', String(req.body.url)]);
+    console.log(req.body.id);
+    const pythonProcess = spawn('python', ['test/predict_by_url.py', String(req.body.id)]);
     // const pythonProcess = spawn('python', ['test/test.py']);
     var result = '';
     pythonProcess.stdout.on('data', function(data) { 
@@ -32,16 +32,36 @@ router.post('/createComment', (req, res) => {
         console.log(result)
         result = result.substring(result.indexOf('{'));
 
-        //fs.writeFileSync("target.txt", '\ufeff' + result, {encoding: 'utf8'});
-        JSON.parser
+        // fs.writeFileSync("target.txt", '\ufeff' + result, {encoding: 'utf8'});
+        // JSON.parser
         console.log("JSON.parse-----------------------------------------------")
         var jsonParseResult = JSON.parse(result)
         console.log(jsonParseResult)
-        console.log(jsonParseResult['r0mgs7YoeCc']['info'])
+        console.log(jsonParseResult[req.body.id]['info'])
         console.log(typeof(result))
+
+        const comment = new Comment({    
+                channelId: req.body.id,
+                info: jsonParseResult[req.body.id]['info'],
+                badComments: jsonParseResult[req.body.id]['bad_comments'],
+            })
+
+        comment.save((err, doc) => {
+            if(err) {
+                return res.json({ success: false, err });
+            } else {
+                console.log("save성공");
+                return res.status(200).json({
+                    comments: comment
+                });
+            } 
+                
+        })
     });
 
-    //pythonProcess.stderr.on('data', function(data) { console.log(data.toString()); });
+    pythonProcess.stderr.on('data', function(data) { console.log(data.toString()); });
+
+
 });
 
 router.post('/testPush', (req, res) => {
@@ -65,11 +85,5 @@ router.post('/testPush', (req, res) => {
     console.log("안녕");
 });
 
-// Video.findOne({ "_id" : req.body.videoId })
-// .populate('writer')
-// .exec((err, videoDetail) => {
-//     if(err) return res.status(400).send(err)
-//     return res.status(200).json({ success: true, videoDetail })
-// })
 
 module.exports = router;
