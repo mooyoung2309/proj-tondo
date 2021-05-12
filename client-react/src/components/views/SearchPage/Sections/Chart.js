@@ -14,7 +14,7 @@ function Chart(props) {
       };
 
     return (
-        <RingProgress {...config} />
+        <RingProgress style={{display: 'inline-block' }} {...config} />
     )
 }
 

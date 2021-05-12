@@ -1,55 +1,139 @@
 import React, { useEffect, useState } from 'react'
-import { List, Avatar } from 'antd';
-
-const data = [
-    {
-      title: 'Ant Design Title 1',
-    },
-    {
-      title: 'Ant Design Title 2',
-    },
-    {
-      title: 'Ant Design Title 3',
-    },
-    {
-      title: 'Ant Design Title 4',
-    },
-  ];
+import { List, Button, message } from 'antd';
 
 
 function VerticalList(props) {
     const badComments = props.badComments;
-    const [itemData, setitemData] = useState([])
+    const [itemData, setitemData] = useState([]);
+    const [clickedAll, setClickedAll] = useState(false);
+    const [selectedItemIndex, setSelectedItemIndex] = useState([]);
 
     useEffect(() => {
-        const tmpItemData = [];
-        for (const key in badComments) {
+        let tmpItemData = [];
+        for (var key in badComments) {
+          //console.log(badComments[key]['nickname'].length)
+          for (var i=0; i<badComments[key]['nickname'].length; i++) {
             const tmp = {
-                channelId: key,
-                nickName: badComments[key]['nickname'][0],
-                comment: badComments[key]['comment'][0],
-                predict: badComments[key]['predict'][0],
+              channelId: key,
+              nickName: badComments[key]['nickname'][i],
+              comment: badComments[key]['comment'][i],
+              predict: badComments[key]['predict'][i],
+              selected: false,
+              style: { },
             }
             tmpItemData.push(tmp);
+          } 
         }
         setitemData(tmpItemData);
-        console.log(tmpItemData);
     }, [badComments])
 
+    const deleteItemFromIndex = (indx) => {
+      let tmpItemData = itemData;
+      let tmpSelectedItemIndex = selectedItemIndex;
+      if (tmpSelectedItemIndex.includes(indx)) {
+        setSelectedItemIndex(tmpSelectedItemIndex.slice(tmpSelectedItemIndex.indexOf(indx), 1));
+      }
+      tmpItemData.splice(indx, 1);
+      setitemData([...tmpItemData]);
+    }
+
+    const cancelItemFromIndex = (indx) => {
+      let tmpItemData = itemData;
+      tmpItemData[indx]['selected'] = false;
+      tmpItemData[indx]['style'] = { };
+      setitemData([...tmpItemData]);
+      if (selectedItemIndex.includes(indx)) {
+        let tmpSelectedItemIndex = selectedItemIndex;
+        let tmpIndx = tmpSelectedItemIndex.indexOf(indx)
+        tmpSelectedItemIndex.splice(tmpIndx, 1);
+
+        setSelectedItemIndex([...tmpSelectedItemIndex]);
+      }
+    }
+
+    const selectItemFromIndex = (indx) => {
+      let tmpItemData = itemData;
+      tmpItemData[indx]['selected'] = true;
+      tmpItemData[indx]['style'] = { backgroundColor: '#f6e199' };
+      setitemData([...tmpItemData]);
+      if (!selectedItemIndex.includes(indx)) {
+        //console.log(indx);
+        let tmpSelectedItemIndex = selectedItemIndex;
+        setSelectedItemIndex([...tmpSelectedItemIndex, indx]);
+      }
+    }
+
+    const onClickSelect = (indx) => {
+      if (itemData[indx]['selected']) {
+        cancelItemFromIndex(indx);
+      } else {
+        selectItemFromIndex(indx);
+      }
+    }
+
+    const onClickSelectAll = () => {
+      if (clickedAll === false){
+        var tmpArry = [];
+        for (var i=0; i<itemData.length; i++) {
+          tmpArry.push(i);
+          selectItemFromIndex(i);
+          setClickedAll(true);
+        }
+        setSelectedItemIndex([...tmpArry]);
+      } else {
+        for (var i=0; i<itemData.length; i++) {
+          cancelItemFromIndex(i)
+          setClickedAll(false);
+        }
+      }
+    }
+
+    const onClickDelete = (indx) => {
+      deleteItemFromIndex(indx);
+    }
+
+    const onClickCopy = () => {
+      if (selectedItemIndex.length === 0) {
+        message.error("선택된 댓글이 없습니다.");
+      } else {
+        var selectedChannelId = "";
+        for (var i=0; i<selectedItemIndex.length; i++) {
+          selectedChannelId += "https://www.youtube.com/channel/" + itemData[selectedItemIndex[i]]['channelId'] + '\n';
+        }
+        message.success("선택된 댓글의 채널 주소가 복사되었습니다.");
+
+        navigator.clipboard.writeText(selectedChannelId)
+
+      }
+      
+    }
 
     return (
+      <>
+        <div style={{ display: 'flex', marginTop: '2rem', marginBottom: '1rem' }}>
+          <span>{selectedItemIndex.length + "개의 댓글이 선택되었습니다."}</span>
+          <div style={{ marginLeft: 'auto' }}>
+            <Button onClick={onClickSelectAll} style={{ marginRight: '0.5rem' }} type="primary" >All</Button>
+            <Button onClick={onClickCopy} type="primary" >Copy</Button>
+          </div>
+        </div>
         <List
             itemLayout="horizontal"
             dataSource={itemData}
             renderItem={item => (
-                <List.Item>
+                <List.Item 
+                  actions={[<a onClick={() => onClickSelect(itemData.indexOf(item))}>Select</a>, <a onClick={() => onClickDelete(itemData.indexOf(item))}>Del</a>]}
+                >
                     <List.Item.Meta
                         title={<a href={"https://www.youtube.com/channel/" + item.channelId + "/about"} target="_blank">{item.nickName}</a>}
-                        description={item.comment}>
+                        description={<span style={item.style}>{item.comment}</span>}
+                    >
+                          
                     </List.Item.Meta>
                 </List.Item>
             )}>
         </List>
+      </>
     )
 }
 
