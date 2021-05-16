@@ -4,6 +4,7 @@ import tensorflow as tf
 
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
+from hanspell import spell_checker
 
 tokenizer = Tokenizer(num_words=5000)
 
@@ -32,6 +33,7 @@ def clean_str(string):
     string = re.sub(r"\s{2,}", " ", string)
     string = re.sub(r"\'{2,}", "\'", string)
     string = re.sub(r"\'", "", string)
+    string = re.sub(r"br", "", string)
 
     return string.lower()
 
@@ -48,21 +50,25 @@ train_X = pad_sequences(train_X, padding='post')
 
 
 model = load_model('model.h5')
-model.evaluate(train_X, train_Y)
+model.evaluate(train_X, train_Y, verbose=0)
 
 def check_bad_comment(str):
-    test_sentence = str.split(' ')
+    str = re.sub(r"[^가-힣]", " ", str)
+    test_sentence=spell_checker.check(str).checked.split(' ')
     test_sentences = []
     now_sentence = []
     for word in test_sentence:
+        if word == '':
+            continue
         now_sentence.append(word)
         test_sentences.append(now_sentence[:])
+    if not test_sentences:
+        return 0
 
     test_X_1 = tokenizer.texts_to_sequences(test_sentences)
     test_X_1 = pad_sequences(test_X_1, padding='post', maxlen=25)
     prediction = model.predict(test_X_1)
-    print(test_sentences[-1], prediction[-1][0])
-    if prediction[-1][0] >= 0.8:
+    if prediction[-1][0] >= 0.95:
         return prediction[-1][0]
     else:
         return 0
