@@ -66,13 +66,17 @@ def get_predict(video_id):
                 predict = model_running.check_bad_comment(comment['textDisplay'])
 
             if predict > 0:
-                print(comment['textDisplay'], predict)
                 num_of_bad_comments += 1
                 if comment['authorChannelId']['value'] not in tmp.keys():
                     tmp[comment['authorChannelId']['value']] = collections.defaultdict(list)
-                tmp[comment['authorChannelId']['value']]['nickname'].append(comment['authorDisplayName'])
-                tmp[comment['authorChannelId']['value']]['predict'].append(str(predict))
-                tmp[comment['authorChannelId']['value']]['comment'].append(comment['textDisplay'])
+                    tmp[comment['authorChannelId']['value']]['nickname'] = comment['authorDisplayName']
+                    tmp[comment['authorChannelId']['value']]['predict'] = str(predict)
+                    tmp[comment['authorChannelId']['value']]['comment'] = comment['textDisplay']
+
+                elif float(tmp[comment['authorChannelId']['value']]['predict']) < predict:
+                    tmp[comment['authorChannelId']['value']]['nickname'] = comment['authorDisplayName']
+                    tmp[comment['authorChannelId']['value']]['predict'] = str(predict)
+                    tmp[comment['authorChannelId']['value']]['comment'] = comment['textDisplay']
 
             if item['snippet']['totalReplyCount'] > 0:
                 for reply_item in item['replies']['comments']:
@@ -83,12 +87,15 @@ def get_predict(video_id):
                     if predict > 0:
                         num_of_bad_comments += 1
                         if reply['authorChannelId']['value'] not in tmp.keys():
-                            tmp[
-                                reply['authorChannelId']['value']] = collections.defaultdict(list)
-                        tmp[reply['authorChannelId']['value']]['nickname'].append(reply[
-                                                                                      'authorDisplayName'])
-                        tmp[reply['authorChannelId']['value']]['predict'].append(str(predict))
-                        tmp[reply['authorChannelId']['value']]['comment'].append(reply['textDisplay'])
+                            tmp[reply['authorChannelId']['value']] = collections.defaultdict(list)
+                            tmp[reply['authorChannelId']['value']]['nickname'] = reply['authorDisplayName']
+                            tmp[reply['authorChannelId']['value']]['predict'] = str(predict)
+                            tmp[reply['authorChannelId']['value']]['comment'] = reply['textDisplay']
+
+                        elif float(tmp[reply['authorChannelId']['value']]['predict']) < predict:
+                            tmp[reply['authorChannelId']['value']]['nickname'] = reply['authorDisplayName']
+                            tmp[reply['authorChannelId']['value']]['predict'] = str(predict)
+                            tmp[reply['authorChannelId']['value']]['comment'] = reply['textDisplay']
                     if len(comments) >= 1000:
                         break
             if len(comments) >= 1000:
