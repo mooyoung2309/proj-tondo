@@ -1,0 +1,51 @@
+{
+    "QyeqeYxzboA": {
+      "bad_comment": {
+        "1": {
+          "nickname": "테스트 사용자 1",
+          "predict": 0.8,
+          "comment": "테스트 댓글 1"
+        },
+        "2": {
+          "nickname": "테스트 사용자 2",
+          "predict": 0.8,
+          "comment": "테스트 댓글 2"
+        },
+        "3": {
+          "nickname": "테스트 사용자 3",
+          "predict": 0.8,
+          "comment": "테스트 댓글 3"
+        },
+        "4": {
+          "nickname": "테스트 사용자 4",
+          "predict": 0.8,
+          "comment": "테스트 댓글 4"
+        },
+        "5": {
+          "nickname": "테스트 사용자 5",
+          "predict": 0.8,
+          "comment": "테스트 댓글 5"
+        },
+        "6": {
+          "nickname": "테스트 사용자 6",
+          "predict": 0.8,
+          "comment": "테스트 댓글 6"
+        },
+        "7": {
+          "nickname": "테스트 사용자 7",
+          "predict": 0.8,
+          "comment": "테스트 댓글 7"
+        },
+        "8": {
+          "nickname": "테스트 사용자 8",
+          "predict": 0.8,
+          "comment": "테스트 댓글 8"
+        }
+      },
+      "info": {
+        "num_of_comments": 50,
+        "num_of_bad_comments": 38,
+        "updated_time": "21/04/27 15:01:48"
+      }
+    }
+  }
