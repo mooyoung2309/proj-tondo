@@ -17,7 +17,6 @@ router.post('/analyzeComment', (req, res) => {
             if(err) return res.status(400).send(err)
             return res.status(200).json({ comments })
         })
-
 });
 
 // run python create comments -> save comments mongoDB
@@ -66,6 +65,5 @@ router.post('/createComment', (req, res) => {
     pythonProcess.stderr.on('data', function(data) { console.log(data.toString()); });
 
 });
-
 
 module.exports = router;

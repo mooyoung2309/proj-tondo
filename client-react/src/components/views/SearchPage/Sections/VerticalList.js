@@ -11,18 +11,15 @@ function VerticalList(props) {
     useEffect(() => {
         let tmpItemData = [];
         for (var key in badComments) {
-          //console.log(badComments[key]['nickname'].length)
-          for (var i=0; i<badComments[key]['nickname'].length; i++) {
-            const tmp = {
-              channelId: key,
-              nickName: badComments[key]['nickname'][i],
-              comment: badComments[key]['comment'][i],
-              predict: badComments[key]['predict'][i],
-              selected: false,
-              style: { },
-            }
-            tmpItemData.push(tmp);
-          } 
+          const tmp = {
+            channelId: key,
+            nickName: badComments[key]['nickname'],
+            comment: badComments[key]['comment'],
+            predict: badComments[key]['predict'],
+            selected: false,
+            style: { },
+          }
+          tmpItemData.push(tmp);
         }
         setitemData(tmpItemData);
     }, [badComments])

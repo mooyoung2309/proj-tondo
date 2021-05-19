@@ -86,10 +86,8 @@ function SearchPage(props) {
                         <Spin style={{display: 'inline-block', marginBottom: '1rem'}} indicator={antIcon}/>
                         <div>AI가 해당 URL을 분석 중입니다. (20초~2분)</div>
                     </div>
-                    
                 </div>
     }
-    
 }
 
 export default SearchPage
