@@ -1,15 +1,14 @@
 # -*- coding: utf-8 -*-
 import os
+import sys
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings")
 import django
 django.setup()
 from googleapiclient.discovery import build
-import pandas
 import time
 import json
 import collections
 import model_running
-import sys
 from data.models import data
 
 
@@ -101,7 +100,7 @@ def get_predict(video_id):
                             tmp[reply['authorChannelId']['value']]['nickname'] = reply['authorDisplayName']
                             tmp[reply['authorChannelId']['value']]['predict'] = str(predict)
                             tmp[reply['authorChannelId']['value']]['comment'] = reply['textDisplay']
-                    if len(comments) >= 1000:
+                    if len(comments) >=1000:
                         break
             if len(comments) >= 1000:
                 break
@@ -121,9 +120,8 @@ def get_predict(video_id):
     result[video_id]['bad_comments'] = [tmp]
 
     print(json.dumps(result, indent=2))
-    data.objects.all().delete()
-    data(channel_id=video_id, bad_comments=result[video_id]['bad_comments'], info=result[video_id]['info']).save()
+    data(channel_id=video_id, bad_comments=json.dumps(result[video_id]['bad_comments'], indent=2), info=json.dumps(result[video_id]['info'], indent=2)).save()
 
 if __name__ == '__main__':
-    get_predict('M49Zgc-57Ak')
+    get_predict('rYH7Y-43SJc')
     # sys.argv[1].split('=')[1][:11]

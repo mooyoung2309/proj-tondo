@@ -9,4 +9,3 @@ class data(models.Model):
     def __str__(self):
         """A string representation of the model."""
         return self.channel_id
-

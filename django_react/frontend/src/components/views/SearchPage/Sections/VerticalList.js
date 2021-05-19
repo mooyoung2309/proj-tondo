@@ -11,7 +11,7 @@ function VerticalList(props) {
     useEffect(() => {
         let tmpItemData = [];
         for (var key in badComments) {
-          //console.log(badComments[key]['nickname'].length)
+          console.log(badComments[key].nickname)
           for (var i=0; i<badComments[key]['nickname'].length; i++) {
             const tmp = {
               channelId: key,

@@ -11,7 +11,7 @@ const antIcon = <LoadingOutlined style={{ fontSize: 50 }} spin />;
 
 function SearchPage(props) {
     const youtubeUrl = props.location.state.youtubeUrl;
-    const youtubeId = youtubeUrl.substring(youtubeUrl.indexOf('=') + 1, youtubeUrl.indexOf('&'));
+    const youtubeId = youtubeUrl.substring(youtubeUrl.indexOf('=') + 1, (youtubeUrl).length);
     
     const [channelId, setChannelId] = useState("");
     const [badComments, setBadComments] = useState({});
@@ -23,25 +23,15 @@ function SearchPage(props) {
             id: youtubeId,
         }
 
-        axios.post('/api/comments/analyzeComment', idData)
+        axios.get('/api')
             .then((response) => {
-                if(response.data.comments != null) {
-                    setChannelId(response.data.comments.channelId);
-                    setInfo(response.data.comments.info);
-                    setBadComments(response.data.comments.badComments);
-                    
-                } else {
-                    // comments 생성
-                    axios.post('/api/comments/createComment', idData)
-                        .then((response) => {
-                            console.log(response)
-                            setChannelId(response.data.comments.channelId);
-                            setInfo(response.data.comments.info);
-                            setBadComments(response.data.comments.badComments);
-                        })
-                        .catch((err) => {
-                            console.log(err);
-                        });
+                for (const i in response.data){
+                    if (youtubeId==response.data[i].channel_id){
+                        console.log('correct')
+                        setChannelId(response.data[i].channel_id);
+                        setInfo(JSON.parse(response.data[i].info));
+                        setBadComments(JSON.parse(response.data[i].bad_comments));
+                    }
                 }
             })
             .catch((err) => {
@@ -51,7 +41,7 @@ function SearchPage(props) {
 
 
     if(channelId !== "") {
-        //console.log(badComments);
+        console.log(badComments);
         return (
             <>
                 <Row>
