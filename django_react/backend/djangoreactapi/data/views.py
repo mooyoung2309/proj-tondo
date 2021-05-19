@@ -11,6 +11,6 @@ class DataView(generics.ListCreateAPIView):
 class CommentView(generics.ListCreateAPIView):
     serializer_class = DataSerializer
     def get(self, request, video_id):
-        queryset = data.objects.filter(channel_id=video_id).values()
-        return queryset
+        self.queryset = data.objects.filter(channel_id=video_id).values()
+
 
