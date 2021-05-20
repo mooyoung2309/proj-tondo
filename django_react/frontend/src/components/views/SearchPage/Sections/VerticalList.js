@@ -12,7 +12,6 @@ function VerticalList(props) {
         let tmpItemData = [];
         for (var key in badComments) {
           for(var key_2 in badComments[key]){
-            console.log(badComments[key][key_2]);
             
             const tmp = {
               channelId: key_2,
@@ -25,7 +24,6 @@ function VerticalList(props) {
             tmpItemData.push(tmp);
           }
         }
-        console.log(tmpItemData);
         setitemData(tmpItemData);
     }, [badComments])
 

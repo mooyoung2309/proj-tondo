@@ -127,7 +127,6 @@ def get_predict(video_id):
     result[video_id]['info']['updated_time'] = now
     result[video_id]['bad_comments'] = [tmp]
 
-    print(json.dumps(result, indent=2))
     data(channel_id=video_id, bad_comments=json.dumps(result[video_id]['bad_comments'], indent=2), info=json.dumps(result[video_id]['info'], indent=2)).save()
 
 if __name__ == '__main__':
