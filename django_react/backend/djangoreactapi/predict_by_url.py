@@ -10,6 +10,13 @@ import json
 import collections
 import model_running
 from data.models import data
+import re
+
+def clean_text(str):
+    text=re.sub("<(/)?([a-zA-Z]*)(\\s[a-zA-Z]*=[^>]*)?(\\s)*(/)?>", "", str)
+    text=re.sub("&quot;", "", text)
+    text = re.sub("&#39;", "", text)
+    return text
 
 
 def get_predict(video_id):
@@ -71,17 +78,19 @@ def get_predict(video_id):
 
             if predict > 0:
                 num_of_bad_comments += 1
+
+
+
                 if comment['authorChannelId']['value'] not in tmp.keys():
                     tmp[comment['authorChannelId']['value']] = collections.defaultdict(list)
                     tmp[comment['authorChannelId']['value']]['nickname'] = comment['authorDisplayName']
                     tmp[comment['authorChannelId']['value']]['predict'] = str(predict)
-                    tmp[comment['authorChannelId']['value']]['comment'] = comment['textDisplay']
+                    tmp[comment['authorChannelId']['value']]['comment'] = clean_text(comment['textDisplay'])
 
                 elif float(tmp[comment['authorChannelId']['value']]['predict']) < predict:
                     tmp[comment['authorChannelId']['value']]['nickname'] = comment['authorDisplayName']
                     tmp[comment['authorChannelId']['value']]['predict'] = str(predict)
-                    tmp[comment['authorChannelId']['value']]['comment'] = comment['textDisplay']
-
+                    tmp[comment['authorChannelId']['value']]['comment'] = clean_text(comment['textDisplay'])
             if item['snippet']['totalReplyCount'] > 0:
                 for reply_item in item['replies']['comments']:
                     reply = reply_item['snippet']
@@ -94,12 +103,11 @@ def get_predict(video_id):
                             tmp[reply['authorChannelId']['value']] = collections.defaultdict(list)
                             tmp[reply['authorChannelId']['value']]['nickname'] = reply['authorDisplayName']
                             tmp[reply['authorChannelId']['value']]['predict'] = str(predict)
-                            tmp[reply['authorChannelId']['value']]['comment'] = reply['textDisplay']
-
+                            tmp[reply['authorChannelId']['value']]['comment'] = clean_text(reply['textDisplay'])
                         elif float(tmp[reply['authorChannelId']['value']]['predict']) < predict:
                             tmp[reply['authorChannelId']['value']]['nickname'] = reply['authorDisplayName']
                             tmp[reply['authorChannelId']['value']]['predict'] = str(predict)
-                            tmp[reply['authorChannelId']['value']]['comment'] = reply['textDisplay']
+                            tmp[reply['authorChannelId']['value']]['comment'] = clean_text(reply['textDisplay'])
                     if len(comments) >=1000:
                         break
             if len(comments) >= 1000:

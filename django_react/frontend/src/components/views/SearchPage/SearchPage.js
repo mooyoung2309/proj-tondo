@@ -11,7 +11,8 @@ const antIcon = <LoadingOutlined style={{ fontSize: 50 }} spin />;
 
 function SearchPage(props) {
     const youtubeUrl = props.location.state.youtubeUrl;
-    const youtubeId = youtubeUrl.substring(youtubeUrl.indexOf('=') + 1, (youtubeUrl).length);
+    const youtubeId = youtubeUrl.substring(youtubeUrl.indexOf('=') + 1, youtubeUrl.indexOf('=') + 12);
+    console.log(youtubeId)
     
     const [channelId, setChannelId] = useState("");
     const [badComments, setBadComments] = useState({});
@@ -23,16 +24,11 @@ function SearchPage(props) {
             id: youtubeId,
         }
 
-        axios.get('/api')
+        axios.get('/api/createComment/'+youtubeId)
             .then((response) => {
-                for (const i in response.data){
-                    if (youtubeId==response.data[i].channel_id){
-                        console.log('correct')
-                        setChannelId(response.data[i].channel_id);
-                        setInfo(JSON.parse(response.data[i].info));
-                        setBadComments(JSON.parse(response.data[i].bad_comments));
-                    }
-                }
+                setChannelId(response.data[0].channel_id);
+                setInfo(JSON.parse(response.data[0].info));
+                setBadComments(JSON.parse(response.data[0].bad_comments));
             })
             .catch((err) => {
                 console.log(err);
@@ -41,7 +37,6 @@ function SearchPage(props) {
 
 
     if(channelId !== "") {
-        console.log(badComments);
         return (
             <>
                 <Row>

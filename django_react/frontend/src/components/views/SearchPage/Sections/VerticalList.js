@@ -7,23 +7,25 @@ function VerticalList(props) {
     const [itemData, setitemData] = useState([]);
     const [clickedAll, setClickedAll] = useState(false);
     const [selectedItemIndex, setSelectedItemIndex] = useState([]);
-
+    console.log(badComments);
     useEffect(() => {
         let tmpItemData = [];
         for (var key in badComments) {
-          console.log(badComments[key].nickname)
-          for (var i=0; i<badComments[key]['nickname'].length; i++) {
+          for(var key_2 in badComments[key]){
+            console.log(badComments[key][key_2]);
+            
             const tmp = {
-              channelId: key,
-              nickName: badComments[key]['nickname'][i],
-              comment: badComments[key]['comment'][i],
-              predict: badComments[key]['predict'][i],
+              channelId: key_2,
+              nickName: badComments[key][key_2]['nickname'],
+              comment: badComments[key][key_2]['comment'],
+              predict: badComments[key][key_2]['predict'],
               selected: false,
               style: { },
             }
             tmpItemData.push(tmp);
-          } 
+          }
         }
+        console.log(tmpItemData);
         setitemData(tmpItemData);
     }, [badComments])
 
