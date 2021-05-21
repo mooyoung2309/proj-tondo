@@ -7,12 +7,16 @@ function VerticalList(props) {
     const [itemData, setitemData] = useState([]);
     const [clickedAll, setClickedAll] = useState(false);
     const [selectedItemIndex, setSelectedItemIndex] = useState([]);
-    console.log(badComments);
+
     useEffect(() => {
-        let tmpItemData = [];
+      setDefaultItemData();
+    }, [badComments])
+
+    const setDefaultItemData = () => {
+      let tmpItemData = [];
         for (var key in badComments) {
           for(var key_2 in badComments[key]){
-            
+          if (Number(badComments[key][key_2]['predict']) === 1) {
             const tmp = {
               channelId: key_2,
               nickName: badComments[key][key_2]['nickname'],
@@ -24,8 +28,29 @@ function VerticalList(props) {
             tmpItemData.push(tmp);
           }
         }
-        setitemData(tmpItemData);
-    }, [badComments])
+        }
+        setitemData([...tmpItemData]);
+    }
+
+    const setAiItemData = () => {
+      let tmpItemData = [];
+        for (var key in badComments) {
+          for(var key_2 in badComments[key]){
+          if (Number(badComments[key][key_2]['predict']) !== 1) {
+            const tmp = {
+              channelId: key_2,
+              nickName: badComments[key][key_2]['nickname'],
+              comment: badComments[key][key_2]['comment'],
+              predict: badComments[key][key_2]['predict'],
+              selected: false,
+              style: { },
+            }
+            tmpItemData.push(tmp);
+          }
+        }
+        }
+        setitemData([...tmpItemData]);
+    }
 
     const deleteItemFromIndex = (indx) => {
       let tmpItemData = itemData;
@@ -103,13 +128,33 @@ function VerticalList(props) {
         message.success("선택된 댓글의 채널 주소가 복사되었습니다.");
 
         navigator.clipboard.writeText(selectedChannelId)
-
       }
-      
+    }
+
+    const onClickDefault = () => {
+      for (var i=0; i<itemData.length; i++) {
+        cancelItemFromIndex(i)
+      }
+      setClickedAll(false);
+      setDefaultItemData();
+    }
+
+    const onClickAi = () => {
+      for (var i=0; i<itemData.length; i++) {
+        cancelItemFromIndex(i)
+      }
+      setClickedAll(false);
+      setAiItemData();
     }
 
     return (
       <>
+        <div style={{ display: 'flex', marginBottom: '1rem' }}>
+          <div style={{ textAlign: 'right' }}>
+            <Button onClick={onClickDefault} style={{ marginRight: '0.5rem' }} type="primary" >Default</Button>
+            <Button onClick={onClickAi} type="primary" >AI (BETA)</Button>
+          </div>
+        </div>
         <div style={{ display: 'flex', marginTop: '2rem', marginBottom: '1rem' }}>
           <span>{selectedItemIndex.length + "개의 댓글이 선택되었습니다."}</span>
           <div style={{ marginLeft: 'auto' }}>
