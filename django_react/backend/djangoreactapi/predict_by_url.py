@@ -78,9 +78,6 @@ def get_predict(video_id):
 
             if predict > 0:
                 num_of_bad_comments += 1
-
-
-
                 if comment['authorChannelId']['value'] not in tmp.keys():
                     tmp[comment['authorChannelId']['value']] = collections.defaultdict(list)
                     tmp[comment['authorChannelId']['value']]['nickname'] = comment['authorDisplayName']

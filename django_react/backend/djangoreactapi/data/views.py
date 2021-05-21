@@ -28,7 +28,7 @@ class CreateDataView(generics.ListCreateAPIView):
             now = datetime.datetime.now()
             time_diff = now - date_time_obj
             print(time_diff.days)
-            if time_diff.days > 1:
+            if time_diff.days >= 1:
                 data.objects.filter(channel_id=url).delete()
                 predict_by_url.get_predict(url)
                 queryset = data.objects.filter(channel_id=url)
