@@ -13,7 +13,7 @@ const onSearch = (props,e) => {
                 state: {youtubeUrl : e}
             });
         } else {
-            message.error("올바른 Youtbe 링크가 아닙니다.");
+            message.error("올바른 Youtube 링크가 아닙니다.");
         }
     } else {
         message.error("올바른 URL 주소가 아닙니다.");
